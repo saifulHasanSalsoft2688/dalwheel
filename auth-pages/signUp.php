@@ -1,7 +1,7 @@
 <?php
 include('../layout/header.php');
 ?>
-<div class="container-fluid p-0"> 
+<div class="container-fluid p-0">
     <section class="authWrapper">
         <div class="container">
             <div class="row">
@@ -9,16 +9,28 @@ include('../layout/header.php');
                     <div class="right-side">
                         <div class="formWrap">
                             <!-- Form  Start -->
-                            <form action="../dashboard/index.php">
+                            <form action="profileDetails.php">
                                 <div class="logo_wrapper"><img src="../assets/images/logo.png" class="img-fluid" alt="Logo"></div>
-                                <div class="text-center my-4 mb-5">
-                                    <h4 class="authPrimTxt">Password Recovery</h4>
-                                    <p class="primText fw500">Enter verification code to recover your password.</p>
+                                <div class="text-center">
+                                    <h4 class="authPrimTxt">Sign In</h4>
+                                    <p class="primText fw500">Create Your Account</p>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="d-block prime-label mb-3 mx-md-3" for="nPassword">New Password <span class="text-danger">*</span> </label>
+                                    <label class="d-block prime-label mb-3 mx-md-3" for="name">Name<span class="text-danger">*</span> </label>
+                                    <input type="text" id="name" class="primary-inputs" placeholder="Enter Name">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="d-block prime-label mb-3 mx-md-3" for="email">Email Address<span class="text-danger">*</span> </label>
+                                    <input type="email" id="email" class="primary-inputs" placeholder="Enter Email Address">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="d-block prime-label mb-3 mx-md-3" for="number">Phone Number<span class="text-danger">*</span> </label>
+                                    <input type="number" id="number" class="primary-inputs" placeholder="Enter Phone No.">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="d-block prime-label mb-3 mx-md-3" for="password">Password<span class="text-danger">*</span> </label>
                                     <div class="position-relative passwordWrapper mb-2">
-                                        <input class="primary-inputs passInput" id="nPassword" type="password" placeholder="Enter New Password">
+                                        <input class="primary-inputs passInput" id="password" type="password" placeholder="Enter Password">
                                         <button type="button" class="not_btn passDisplay">
                                             <i class="fas fa-eye-slash" aria-hidden="true"></i>
                                         </button>
@@ -34,8 +46,8 @@ include('../layout/header.php');
                                     </div>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <button class="main-btn w-100" type="button" data-target="#updatePassword" data-toggle="modal">Update</button>
-                                    <a href="./login.php" class="colWhite d-block my-3 fw-500 text-decoration-underline"> Back to sign In </a>
+                                    <button class="main-btn w-100" data-target="#signUp" type="button" data-toggle="modal">Sign Up</button>
+                                    <p class="my-3 colWhite">Already have an Account? <a href="./login.php" class="primColor text-decoration-underline">Sign in </a></p>
                                 </div>
                             </form>
                         </div>
@@ -45,6 +57,7 @@ include('../layout/header.php');
         </div>
     </section>
 </div>
+
 <?php
 include('../layout/auth-footer.php');
 ?>

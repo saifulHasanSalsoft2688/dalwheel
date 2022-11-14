@@ -8,7 +8,6 @@
     --white: #fff;
 }
 
-
 body {
     font-family: Qanelas;
     font-weight: 400;
@@ -679,8 +678,8 @@ footer {
 
 .loginPopup {
     padding-bottom: 30px;
-    padding-top: 10px;
-    border-radius: 30px;
+    padding-top: 5px;
+    border-radius: 0;
 }
 
 .loginPopup .closebtn {
@@ -689,16 +688,16 @@ footer {
 }
 
 .loginPopup .closebtn button {
-    background-color: #fff;
-    box-shadow: 1px 0px 3px rgb(32 30 30 / 42%);
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #817d7d;
+    /* background-color: #fff; */
+    /* box-shadow: 1px 0px 3px rgb(32 30 30 / 42%); */
+    /* border-radius: 50px; */
+    /* width: 30px; */
+    /* height: 30px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 35px;
+    /* color: #817d7d; */
     opacity: 1;
 }
 
@@ -1595,6 +1594,296 @@ button.quantity-right-plus {
 } */
 /* for mobile  */
 
+/*====================================
+  | New Developer Css Starts Here  |
+=====================================*/
+
+/*===================================
+    Authentication Css Starts Here
+===================================== */
+.authWrapper {
+    background: url('../images/slide-1.png') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12rem 1rem;
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.formWrap {
+    padding: 30px 45px;
+    border-radius: 10px;
+    z-index: 1024;
+    position: relative;
+    background: transparent;
+    /* Note: currently only Safari supports backdrop-filter */
+    backdrop-filter: blur(45px);
+    --webkit-backdrop-filter:
+        blur(45px);
+    background-color: rgba(0, 0, 0, 0.11);
+    color: var(--white);
+}
+
+.auth_body_side {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+}
+
+.top_side_png {
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    width: 15%;
+}
+
+.logo_wrapper {
+    width: 150px;
+    margin: 0px auto 10px;
+}
+
+.leftImgWrapper {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.passwordWrapper .not_btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.passwordWrapper .not_btn:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.passDisplay i {
+    color: var(--white);
+}
+
+.primary-inputs {
+    padding: 13px 20px;
+    outline: none;
+    border: 1px solid var(--white);
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    color: var(--white);
+}
+
+.primary-inputs::placeholder {
+    color: var(--white)
+}
+
+.secInp {
+    background: #fff;
+    border: 1px solid rgba(206, 206, 206, 0.3);
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.06));
+    color: #000;
+}
+
+.secInp::placeholder {
+    color: var(--black)
+}
+
+
+.disableInputs {
+    border: none;
+    /* padding: 10px 0; */
+    background-color: transparent;
+}
+
+.primiry-link {
+    color: var(--primColor) !important;
+}
+
+.input-type-code {
+    width: 100%;
+    height: 115px;
+    margin-right: 10px;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid var(--gray);
+    font-size: 22px;
+    color: var(--gray);
+    text-align: center;
+    font-weight: bold;
+    background-color: #F9F9F9;
+}
+
+section.authentication-wrapper {
+    overflow-x: hidden;
+}
+
+input[type='date'],
+select {
+    cursor: pointer;
+}
+
+
+/*===================================
+    Buttons Css Starts Here
+===================================== */
+.sec-btn,
+.main-btn {
+    outline: none;
+    border: none;
+    color: var(--white) !important;
+    padding: 15px 27px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 190px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    font-family: 'euclid';
+}
+
+.main-btn {
+    background: linear-gradient(#c90000 0%, #c90000 100%);
+}
+
+.sec-btn {
+    background-color: var(--primColor);
+}
+
+.sec-transparent {
+    background-color: transparent !important;
+    color: var(--lightBlack) !important;
+    border: 1px solid var(--lightBlack);
+}
+
+.main-btn:hover {
+    color: var(--white);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#5d3232 0%, #c90000 100%);
+}
+
+.sec-btn:hover {
+    color: var(--white);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#5d3232 0%, #c90000 100%);
+}
+
+.sec-transparent:hover {
+    background-color: var(--primColor) !important;
+    color: var(--white) !important;
+    border: 1px solid var(--primColor) !important;
+}
+
+.AddMore {
+    background-color: var(--primColor);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    color: var(--white);
+    font-size: 27px;
+    line-height: 20px;
+}
+
+.btnRed {
+    background-color: var(--red);
+}
+
+.btnGreen {
+    background-color: var(--green);
+}
+
+.cur_pointer {
+    cursor: pointer;
+}
+
+.primColor {
+    color: var(--text-primary-theme);
+}
+
+form a {
+    color: #fff !important;
+}
+
+.pop-up-content img {
+    width: 110px;
+    height: auto;
+    border-radius: 100%;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.pop-up-content {
+    padding: 40px 10px;
+}
+
+.listingCard {
+    background: #fff;
+    border: 1px solid rgba(206, 206, 206, 0.3);
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.06));
+    padding: 10px;
+}
+
+.list-view .row>[class*='col-'] {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.list-view .card {
+    flex-direction: row;
+}
+
+@media (max-width: 575.98px) {
+    .list-view .card {
+        flex-direction: column;
+    }
+}
+
+.list-view .card>.card-img-top {
+    width: auto;
+}
+
+.list-view .card .card-body {
+    display: inline-block;
+}
+
+
+
+
+/*
+==============================
+===========| End |============
+============================== 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 799px) {
     .mainBanner {
         background-size: cover;
@@ -1657,6 +1946,6 @@ button.quantity-right-plus {
     .previous-image {
         height: 200px;
     }
-    
-    
+
+
 }

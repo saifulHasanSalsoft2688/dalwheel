@@ -31,18 +31,18 @@
       </div>
       <div class="pop-up-content text-center">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
-        <h4 class="mb-1">System Message!</h4>
-        <p class="mb-0">Your password has been reset. Please Sign In to continue.</p>
+        <h4 class="mb-2">System Message!</h4>
+        <p class="mb-0">Your password has been reset. <br> Please Sign In to continue.</p>
       </div>
       <div class="loginBtn text-center mt-3">
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Login</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="window.location.assign('../auth-pages/login.php')">Sign In</button>
       </div>
     </div>
   </div>
 </div>
 
 <!-- update signup -->
-<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signupTitle" aria-hidden="true">
+<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="signupTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content loginPopup">
       <div class="closebtn">
@@ -52,11 +52,11 @@
       </div>
       <div class="pop-up-content text-center">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
-        <h4 class="mb-1">System Message!</h4>
-        <p class="mb-0">Congrats! You have been registered successfully!</p>
+        <h4 class="mb-1">Successfully</h4>
+        <p class="mb-0">Signed up Successfully.</p>
       </div>
       <div class="loginBtn text-center mt-3">
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" data-target="#logoutWarning" data-toggle="modal">Continue</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="widow.location.assign('../auth-pages/login.php')" >OK</button>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
       </div>
       <div class="loginBtn text-center mt-3 d-flex justify-content-center gap-15">
         <button class="secondary-theme-button shadow btn borderBtn" data-dismiss="modal">No</button>
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal"  onclick="window.location = '../auth-pages/login.php'">Yes</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="window.location = '../auth-pages/login.php'">Yes</button>
       </div>
     </div>
   </div>

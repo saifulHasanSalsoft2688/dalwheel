@@ -220,7 +220,7 @@ include('../layout/loggedin-header.php');
                         </div>
                     </div>
                 </div>
-                <div class="listing-box my-3">
+                <!-- <div class="listing-box my-3">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="featureBox shadow row">
@@ -296,6 +296,70 @@ include('../layout/loggedin-header.php');
                             </nav>
                         </div>
                     </div>
+                </div> -->
+                <div class="container mb-3 mt-3">
+                    <button class="btn btn-primary btn-grid">Grid View</button>
+                    <button class="btn btn-danger btn-list">List View</button>
+
+                </div>
+                <div class="container grid-container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="listingCard">
+                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -305,3 +369,19 @@ include('../layout/loggedin-header.php');
 <?php
 include('../layout/footer.php');
 ?>
+<script>
+    function showList(e) {
+        var $gridCont = $('.grid-container');
+        e.preventDefault();
+        $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+    }
+
+    function gridList(e) {
+        var $gridCont = $('.grid-container')
+        e.preventDefault();
+        $gridCont.removeClass('list-view');
+    }
+
+    $(document).on('click', '.btn-grid', gridList);
+    $(document).on('click', '.btn-list', showList);
+</script>

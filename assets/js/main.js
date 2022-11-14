@@ -1,29 +1,29 @@
 AOS.init();
 
-jQuery(window).scroll(function(event) {
-    var scroll = jQuery(window).scrollTop();
-    if (scroll > 2) {
-        jQuery('.guest-header').css('transition', '.2s');
-        jQuery('.guest-header').addClass('bg-white border-bottom');
-        jQuery('.guest-header').removeClass('default');
-        jQuery('.guest-header img').css('width', '50px');
-        
-    } else {
-        jQuery('.guest-header').removeClass('bg-white border-bottom default');
-        jQuery('.guest-header').addClass('default');
-        jQuery('.guest-header img').css('width', 'auto');
-    }
+jQuery(window).scroll(function (event) {
+  var scroll = jQuery(window).scrollTop();
+  if (scroll > 2) {
+    jQuery('.guest-header').css('transition', '.2s');
+    jQuery('.guest-header').addClass('bg-white border-bottom');
+    jQuery('.guest-header').removeClass('default');
+    jQuery('.guest-header img').css('width', '50px');
 
-    // headlight 
-    var windowTop =  parseInt(scroll);
-    let headlight = jQuery('.mainBanners').offset();
-    headlight = parseInt(headlight.top + 200);
-    if(windowTop > headlight) {
-      jQuery('.hl').css('opacity', '1');
-    } else {
-      jQuery('.hl').css('opacity', '0');
-    }
-    
+  } else {
+    jQuery('.guest-header').removeClass('bg-white border-bottom default');
+    jQuery('.guest-header').addClass('default');
+    jQuery('.guest-header img').css('width', 'auto');
+  }
+
+  // headlight 
+  var windowTop = parseInt(scroll);
+  let headlight = jQuery('.mainBanners').offset();
+  headlight = parseInt(headlight.top + 200);
+  if (windowTop > headlight) {
+    jQuery('.hl').css('opacity', '1');
+  } else {
+    jQuery('.hl').css('opacity', '0');
+  }
+
 
 });
 
@@ -46,66 +46,66 @@ jQuery('.slider-nav').slick({
   verticalSwiping: true,
   arrows: false,
 });
-	
+
 
 // carousal 
 
 
 jQuery(".regular").slick({
-    dots: false,
-    infinite: true,
-    slidesToShow: 3,
-    autoplay: true,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            }
-        },
-        {
-          breakpoint: 540,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }
-      ]
-  });
-
-
-  jQuery('.center').slick({
-    dots: true,
-    autoplay: true,
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 4,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
+  dots: false,
+  infinite: true,
+  slidesToShow: 3,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
       }
-    ]
-  });
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
 
-  
+
+jQuery('.center').slick({
+  dots: true,
+  autoplay: true,
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 4,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
 // banner slider 
 
 jQuery(".banners").slick({
@@ -122,14 +122,14 @@ jQuery(".banners").slick({
 });
 
 
-jQuery('.sell-featured-box').click(function(){
-  let imageFind =  jQuery(this).find('img').attr('src');
+jQuery('.sell-featured-box').click(function () {
+  let imageFind = jQuery(this).find('img').attr('src');
   let carName = jQuery(this).find('h3').text();
   jQuery('.avtive-featured-car .car-image img').attr('src', imageFind);
   jQuery('.avtive-featured-car .car-name h3').text(carName);
 })
 
-setInterval(function(){
+setInterval(function () {
   var displayImgae = jQuery('.slick-active').prev('.slick-slide').find('.slide-image img').attr('src');
   jQuery('.slick-active').find('.previous-image img').attr('src', displayImgae);
 }, 500);
@@ -154,39 +154,39 @@ inputElements.forEach((ele, index) => {
 
 // show advance filter 
 
-jQuery('.advanceFilter').click(function(){
+jQuery('.advanceFilter').click(function () {
   jQuery('.advance-filter-option').show();
 });
 
 
 // custom upload button  
-jQuery('.uploadBtn button').click(function(){
+jQuery('.uploadBtn button').click(function () {
   jQuery('input#upload').trigger('click');
 })
 
 // upload images show 
 
-jQuery(function() {
-  var imagesPreview = function(input, placeToInsertImagePreview) {
+jQuery(function () {
+  var imagesPreview = function (input, placeToInsertImagePreview) {
 
-      if (input.files) {
-          var filesAmount = input.files.length;
+    if (input.files) {
+      var filesAmount = input.files.length;
 
-          for (i = 0; i < filesAmount; i++) {
-              var reader = new FileReader();
+      for (i = 0; i < filesAmount; i++) {
+        var reader = new FileReader();
 
-              reader.onload = function(event) {
-                  jQuery(jQuery.parseHTML('<img draggable="false">')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
-              }
+        reader.onload = function (event) {
+          jQuery(jQuery.parseHTML('<img draggable="false">')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+        }
 
-              reader.readAsDataURL(input.files[i]);
-          }
+        reader.readAsDataURL(input.files[i]);
       }
+    }
 
   };
 
-  jQuery('#upload').on('change', function() {
-      imagesPreview(this, 'div.gallery');
+  jQuery('#upload').on('change', function () {
+    imagesPreview(this, 'div.gallery');
   });
 });
 
@@ -207,7 +207,7 @@ jQuery('.quantity-right-plus').click(function () {
 
 // remove cart items 
 
-jQuery('.removeProduct').click(function(){
+jQuery('.removeProduct').click(function () {
   jQuery(this).parents('tr').remove();
 })
 
@@ -223,19 +223,19 @@ jQuery('.removeProduct').click(function(){
 // });
 
 
-jQuery('.showFileds').click(function(){
+jQuery('.showFileds').click(function () {
   jQuery(this).parents('.wizard').hide();
   jQuery(this).parents('.delivery-details').find('.showBox').show();
   jQuery(this).parents('.delivery-details').find('.editBtn').show();
 });
 
-jQuery('.editBtn').click(function() {
+jQuery('.editBtn').click(function () {
   jQuery(this).parents('.delivery-details').find('.wizard').show();
   jQuery(this).parents('.delivery-details').find('.showBox').hide();
   jQuery(this).hide();
 });
 
-jQuery('form > div:nth-child(3) .showFileds').click(function(){
+jQuery('form > div:nth-child(3) .showFileds').click(function () {
   jQuery('.submitButn').show();
 });
 
@@ -243,17 +243,19 @@ jQuery('form > div:nth-child(3) .showFileds').click(function(){
 
 
 
-jQuery('.password-box button').click(function(){
+jQuery('.password-box button').click(function () {
   var getType = jQuery(this).prev('input').attr('type');
-  if(getType == 'password') {
-      jQuery(this).prev('input').attr('type', 'text');
-      jQuery(this).find('i').removeClass('fa-eye-slash');
-      jQuery(this).find('i').addClass('fa-eye');
+  if (getType == 'password') {
+    jQuery(this).prev('input').attr('type', 'text');
+    jQuery(this).find('i').removeClass('fa-eye-slash');
+    jQuery(this).find('i').addClass('fa-eye');
   } else {
-      jQuery(this).prev('input').attr('type', 'password');
-      jQuery(this).find('i').addClass('fa-eye-slash');
-      jQuery(this).find('i').removeClass('fa-eye');
+    jQuery(this).prev('input').attr('type', 'password');
+    jQuery(this).find('i').addClass('fa-eye-slash');
+    jQuery(this).find('i').removeClass('fa-eye');
   }
 })
 
 jQuery('.back-page a').attr('href', 'javascript:history.back()');
+
+ 
