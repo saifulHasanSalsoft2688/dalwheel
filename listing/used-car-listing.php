@@ -203,104 +203,23 @@ include('../layout/loggedin-header.php');
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="seachedFilter shadow">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6">
-                            <div class="form-group d-flex align-items-center justify-content-end gap-15 mb-0">
-                                <label for="petCategory" class="flex-shrink-0 mb-md-0">
-                                    Pet Category
-                                </label>
-                                <select name="pet-category" id="petCategory" class="form-control rounded-pill serachFiled flex-shrink-0">
-                                    <option value="">Select</option>
-                                    <option value="dog">Dog</option>
-                                    <option value="cat">Cat</option>
-                                </select>
-                            </div>
+                <div class="seachedFilter shadow  my-3">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between"> 
+                        <div class="form-group d-flex align-items-center justify-content-end gap-15 mb-0">
+                            <label for="petCategory" class="flex-shrink-0 mb-md-0">
+                                Pet Category
+                            </label>
+                            <select name="pet-category" id="petCategory" class="form-control rounded-pill serachFiled flex-shrink-0">
+                                <option value="">Select</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                            </select>
+                        </div>
+                        <div class=" ">
+                            <button class="btn btn-primary btn-grid">Grid View</button>
+                            <button class="btn btn-danger btn-list">List View</button>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="listing-box my-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="featureBox shadow row">
-                                <div class="col-md-3">
-                                    <div class="feature-image">
-                                        <div class="additional-things">
-                                            <div class="featureRibbon">
-                                                <span>Featured</span>
-                                            </div>
-                                            <div class="whislList">
-                                                <button tabindex="-1"><i class="fa fa-heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <figure class="adjust-image">
-                                            <img src="../assets/images/c1.png" alt="Kathy Lewis Baby" class="mw-100" draggable="false">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="feature-content px-3">
-                                        <div class="feature-header d-flex align-items-center gap-15">
-                                            <h4 class="f-18">Kathy Lewis Baby</h4>
-                                            <img src="../assets/images/gender-female.png" alt="icon" draggable="false" class="mw-100">
-                                        </div>
-                                        <div class="feature-body">
-                                            <div class="d-flex gap-15">
-                                                <div class="icon-box flex-shrink-0">
-                                                    <img src="../assets/images/animal-shelter.png" alt="Animal Shelter" draggable="false">
-                                                </div>
-                                                <div class="description-box flex-grow-1">
-                                                    <p class="mb-0">From: Pittie Love Rescue</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex gap-15">
-                                                <div class="icon-box flex-shrink-0">
-                                                    <img src="../assets/images/pin.png" alt="Pin" draggable="false">
-                                                </div>
-                                                <div class="description-box flex-grow-1">
-                                                    <p class="mb-0">Greenville, Texas</p>
-                                                    <p class="mb-0 py-2">10 miles away</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="feature-footer pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="price-box">
-                                                    <h3 class="f-24 text-theme-primary">$820</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination-bar">
-                    <div class="d-flex justify-content-between flex-wrap align-items-center">
-                        <p class="mb-0">Showing 10 of 50 Entries</p>
-                        <div class="viewAll d-flex justify-content-end flex-wrap py-3">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center mb-0">
-                                    <li class="page-item">
-                                        <a class="page-link">Previous</a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="container mb-3 mt-3">
-                    <button class="btn btn-primary btn-grid">Grid View</button>
-                    <button class="btn btn-danger btn-list">List View</button>
-
                 </div>
                 <div class="container grid-container">
                     <div class="row">
