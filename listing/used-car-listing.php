@@ -6,13 +6,14 @@ include('../layout/loggedin-header.php');
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="listing-title text-center">
-                    <h1 class="font-weight-bold">Cats</h1>
+                <div class="listing-title">
+                    <h5 class="">Used Cars <i class="fa fa-chevron-right"></i> <span class="text-danger">Used Cars</span> </h5>
+                    <h1 class="font-weight-bold">Used Car For Sale</h1>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="filter-box shadow h-100 rounded-10">
                     <div class="filter-title">
                         <h4 class="text-white mb-0">Filters</h4>
@@ -202,78 +203,186 @@ include('../layout/loggedin-header.php');
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-lg-9">
                 <div class="seachedFilter shadow  my-3">
-                    <div class="d-flex flex-wrap align-items-center justify-content-between"> 
+                    <div class="d-flex flex-wrap align-items-center justify-content-between">
                         <div class="form-group d-flex align-items-center justify-content-end gap-15 mb-0">
                             <label for="petCategory" class="flex-shrink-0 mb-md-0">
                                 Pet Category
                             </label>
                             <select name="pet-category" id="petCategory" class="form-control rounded-pill serachFiled flex-shrink-0">
-                                <option value="">Select</option>
-                                <option value="dog">Dog</option>
-                                <option value="cat">Cat</option>
+                                <option value="">Price High To Low</option>
+                                <option value="a-z">a-z</option>
+                                <option value="z-a">z-a</option>
                             </select>
                         </div>
                         <div class=" ">
-                            <button class="btn btn-primary btn-grid">Grid View</button>
-                            <button class="btn btn-danger btn-list">List View</button>
+                            <button class="btn notBtn btn-list"> <i class="fa fa-list"></i> List</button>
+                            <button class="btn notBtn btn-grid"> <i class="fa fa-th-large"></i> Grid</button>
                         </div>
                     </div>
                 </div>
                 <div class="container grid-container">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="listingCard">
-                                <img class="card-img-top" src="https://picsum.photos/362/180" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="listingCard my-3">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/slide-1.png" alt="Card image cap" class="img-fluid" draggable="false">
+                                    <button class="notBtn addWhishlist"><i class="fa fa-heart"></i></button>
+                                </div>
+                                <div class="cardBody">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap my-1">
+                                        <h6 class="secTitle fw-600 mb-0 my-2">Renault UK</h6>
+                                        <h6 class="secTitle mb-0 fw-bold my-2 text-danger"> <sup class="fw400">$</sup> 566. <sub>90</sub> </h6>
+                                    </div>
+                                    <h6 class="secTitle fw-600">New York</h6>
+                                    <!-- features start -->
+                                    <ul class="featureList">
+                                        <li>2008</li>
+                                        <li>92,000 Km</li>
+                                        <li>Petrol</li>
+                                        <li>1800 Cc</li>
+                                        <li>Automatic</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
+                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -283,8 +392,7 @@ include('../layout/loggedin-header.php');
             </div>
         </div>
     </div>
-</section>
-
+</section> 
 <?php
 include('../layout/footer.php');
 ?>

@@ -387,8 +387,7 @@ include('../layout/header.php');
         </div>
     </div>
 </section>
-
-
+ 
 <!-- car products  -->
 
 <section class="car-products p-70">
@@ -532,8 +531,7 @@ include('../layout/header.php');
         </div>
     </div>
 </section>
-
-
+ 
 <!-- car comparison  -->
 
 <section class="car-compare p-70">
@@ -613,9 +611,7 @@ include('../layout/header.php');
         </div>
     </div>
 </section>
-
-
-
+ 
 
 <?php
 include('../layout/footer.php');
