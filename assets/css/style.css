@@ -35,6 +35,7 @@ body {
     border-radius: 0px;
     min-width: 150px;
     text-align: center;
+    border: none;
 }
 
 .gap-15 {
@@ -2067,8 +2068,92 @@ form a {
     display: inline-block;
 }
 
+.serachFiled {
+    border-radius: 0 !important;
+    border: 1px solid rgba(206, 206, 206, 0.3) !important;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.06)) !important;
+}
 
+.list-view .listingCard {
+    display: flex;
+    width: 100%;
+}
 
+.list-view .listingCard .img_wrapper {
+    width: 350px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.addWhishlist {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--text-primary-theme);
+    background-color: #fff !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.notBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.featureList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featureList li {
+    margin: 5px 10px;
+    position: relative;
+}
+
+.featureList li:before {
+    content: '';
+    height: 90%;
+    width: 2px;
+    background-color: #70707080;
+    right: -10px;
+    position: absolute;
+}
+
+.featureList li:last-child:before {
+    display: none;
+}
+
+.contactBtn {
+    background: rgba(223, 255, 212, 0.38);
+    padding: 0.2rem 1rem;
+    font-size: 20px;
+    color: #3AB210;
+    width: 55px;
+    height: 40px;
+}
+
+.secTitle {
+    font-family: 'Qanelas';
+    font-size: 20px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.cardBody {
+    width: 100%;
+}
 
 /*
 ==============================
@@ -2076,6 +2161,103 @@ form a {
 ============================== 
 */
 
+
+/* Product Details Start Here */
+.features_wrap {
+    border: 1px solid #EAEAEA;
+    /* padding: 30px 40px; */
+}
+
+.features_box {
+    padding: 10px 5px;
+    transition: 0.8s ease-in-out;
+}
+
+.features_box p {
+    transition: 0.8s ease-in-out;
+}
+
+.features_box:hover {
+    background-color: #c50011;
+}
+
+.features_box:hover p,
+.features_box:hover img {
+    filter: brightness(15);
+}
+
+.features_wrap .cutom_border {
+    border-right: 1px solid #EAEAEA;
+}
+
+.features_wrap .cutom_border:last-child {
+    border-right: none;
+}
+
+.descBox {
+    display: flex;
+    align-items: center;
+    font-family: 'euclid';
+    color: #89898A;
+    font-weight: 500;
+}
+
+.descBox img {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.features_box img {
+    height: 35px;
+    margin-bottom: 10px;
+    width: 35px;
+    object-fit: contain;
+    object-position: center;
+    transition: 0.8s ease-in-out;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '' !important;
+}
+
+.sliderIcons {
+    color: var(--white) !important;
+    font-size: 45px;
+}
+
+.product-slider .slick-prev {
+    left: 20px !important;
+    z-index: 99;
+}
+
+.product-slider .slick-next {
+    right: 30px !important;
+    z-index: 99;
+}
+
+.slider-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+}
+
+.item-sliderNav img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 0;
+    object-position: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.item.item-sliderNav {
+    margin: 0px 10px;
+}
 
 
 
@@ -2120,7 +2302,6 @@ form a {
     }
 }
 
-
 @media(max-width: 1300px) {
     .slide-heading h3 {
         font-size: 75px;
@@ -2154,39 +2335,14 @@ form a {
         height: 200px;
     }
 
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[
-    {
-        QName:abc 
+@media(max-width: 991px) {
+    .list-view .listingCard .img_wrapper {
+        width: 100%;
     }
-]
 
-
-
-
-
-
-
-
-
-
-
+    .list-view .listingCard {
+        display: block;
+    }
+}
