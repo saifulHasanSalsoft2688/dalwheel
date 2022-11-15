@@ -6,18 +6,15 @@ include('../layout/loggedin-header.php');
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="listing-title">
+                <div class="listing-title mb-3">
                     <h5 class="">Used Cars <i class="fa fa-chevron-right"></i> <span class="text-danger">Used Cars</span> </h5>
-                    <h1 class="font-weight-bold">Used Car For Sale</h1>
+                    <h3 class="font-weight-bold">Used Car For Sale</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-3">
                 <div class="filter-box shadow h-100 rounded-10">
-                    <div class="filter-title">
-                        <h4 class="text-white mb-0">Filters</h4>
-                    </div>
                     <div class="filter-feilds">
                         <form action="#">
                             <div class="form-group">
