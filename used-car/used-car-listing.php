@@ -2,7 +2,7 @@
 include('../layout/loggedin-header.php');
 ?>
 
-<section class="listing-page py-5">
+<section class="car-listing-page py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

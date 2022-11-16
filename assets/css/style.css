@@ -237,7 +237,7 @@ header {
     z-index: 9999;
 }
 
-header:not(.guest-header) img {
+header:not(.guest-header) .navbar-brand img {
     width: 85px;
     max-width: 100%;
 }
@@ -565,9 +565,6 @@ section.used-car .row {
     padding: 70px 0;
 }
 
-.testimonalSection {
-    padding: 70px 0;
-}
 
 .f-40 {
     font-size: 38px;
@@ -580,9 +577,17 @@ section.used-car .row {
 
 .testimonialBox {
     padding: 15px 20px;
-    border-radius: 20px;
+    border-radius: 0;
     border: 1px solid #f2f2f2;
     margin-bottom: 20px;
+}
+
+.testimonialContent h4 {
+    font-size: 18px;
+}
+
+.testimonialContent p {
+    font-size: 14px;
 }
 
 .author-image figure {
@@ -773,17 +778,6 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid var(--text-primary-theme);
 }
 
-.actionBtns button,
-.actionBtns a {
-    background-color: #f1f1f1;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 span.count {
     position: absolute;
     top: 0;
@@ -825,9 +819,13 @@ span.count {
 .dropdown-list a {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     color: #787878;
     font-size: 14px;
+}
+
+.actionBtns {
+    font-size: 20px;
 }
 
 .dropdown-list li:not(:last-child) {
@@ -1759,15 +1757,15 @@ input[type=range]:focus {
     border-radius: 0;
 }
 
-button[aria-expanded="true"]::after {
-    content: '\f068';
+.inspection-report button[aria-expanded="true"]::after {
+    content: '\f054';
     font-family: 'FontAwesome';
     position: absolute;
     right: 10px;
 }
 
-button[aria-expanded="false"]::after {
-    content: '\f067';
+.inspection-report button[aria-expanded="false"]::after {
+    content: '\f054';
     font-family: 'FontAwesome';
     position: absolute;
     right: 10px;
@@ -1967,7 +1965,6 @@ select {
     transition: 0.3s ease-in-out;
     display: inline-block;
     text-align: center;
-    font-family: 'euclid';
 }
 
 .main-btn {
@@ -2192,14 +2189,14 @@ form a {
     transition: 0.8s ease-in-out;
 }
 
-.features_box:hover {
+/* .features_box:hover {
     background-color: #c50011;
 }
 
 .features_box:hover p,
 .features_box:hover img {
     filter: brightness(15);
-}
+} */
 
 .features_wrap .cutom_border {
     border-right: 1px solid #EAEAEA;
@@ -2212,7 +2209,6 @@ form a {
 .descBox {
     display: flex;
     align-items: center;
-    font-family: 'euclid';
     color: #89898A;
     font-weight: 500;
 }
@@ -2289,19 +2285,12 @@ form a {
     box-shadow: none !important;
 }
 
-.customAccordion .accordion-button::after {
-    transform: rotate(-90deg) !important;
-}
 
 .customAccordion .accordion-button:not(.collapsed) {
     background-color: #e0e0e0a1 !important;
     color: var(--black) !important;
 }
 
-.accordion-button:not(.collapsed)::after {
-    transform: rotate(0deg) !important;
-    filter: grayscale(2);
-}
 
 .customAccordion .progressWrap .progress-bar,
 .customAccordion .progressWrap .progress {
@@ -2403,14 +2392,14 @@ form a {
     transition: 0.8s ease-in-out;
 }
 
-.features_box:hover {
+/* .features_box:hover {
     background-color: #c50011;
 }
 
 .features_box:hover p,
 .features_box:hover img {
     filter: brightness(15);
-}
+} */
 
 .features_wrap .cutom_border {
     border-right: 1px solid #EAEAEA;
@@ -2423,7 +2412,6 @@ form a {
 .descBox {
     display: flex;
     align-items: center;
-    font-family: 'euclid';
     color: #89898A;
     font-weight: 500;
 }
@@ -2508,6 +2496,59 @@ form a {
 }
 
 
+
+.btn-theme-solid {
+    background-color: var(--text-primary-theme);
+    color: var(--white);
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 1px solid;
+    display: inline-block;
+    min-width: 250px;
+    text-align: center;
+}
+
+.btn-theme-solid:hover {
+    background-color: transparent;
+    color: var(--text-primary-theme);
+    border: 1px solid var(--text-primary-theme);
+    text-decoration: none;
+}
+
+.btn-theme-outline {
+    background-color: transparent;
+    color: var(--text-primary-theme);
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 1px solid var(--text-primary-theme);
+    display: inline-block;
+    min-width: 250px;
+    text-align: center;
+}
+
+.btn-theme-outline:hover {
+    background-color: var(--text-primary-theme);
+    color: var(--white);
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.btn-grey-color {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 10px 50px;
+    font-size: 16px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.login-menu-bar, .guest-menu-bar {
+    display: flex;
+}
 
 
 

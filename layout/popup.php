@@ -56,7 +56,7 @@
         <p class="mb-0">Signed up Successfully.</p>
       </div>
       <div class="loginBtn text-center mt-3">
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="widow.location.assign('../auth-pages/login.php')" >OK</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="widow.location.assign('../auth-pages/login.php')">OK</button>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
       </div>
       <div class="loginBtn text-center mt-3 d-flex justify-content-center gap-15">
         <button class="secondary-theme-button shadow btn borderBtn" data-dismiss="modal">No</button>
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" onclick="window.location = '../auth-pages/login.php'">Yes</button>
+        <button class="secondary-theme-button shadow btn bg-brown" id="logout" data-dismiss="modal">Yes</button>
       </div>
     </div>
   </div>
@@ -93,20 +93,41 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="pop-up-content text-center">
+      <div class="pop-up-content text-center pb-3">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
         <h4 class="mb-1">System Message!</h4>
-        <p class="mb-0">Your ad will successfully submitted to admin</p>
+        <p class="mb-0">Your message has been sent.</p>
       </div>
       <div class="loginBtn text-center mt-3">
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Continue</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Ok</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- adoption request -->
-<div class="modal fade" id="adoptRequest" tabindex="-1" role="dialog" aria-labelledby="adoptRequestTitle" aria-hidden="true">
+<!-- updated ad -->
+<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signInTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loginPopup">
+      <div class="closebtn">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="pop-up-content text-center pb-3">
+        <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
+        <h4 class="mb-1">Alert</h4>
+        <p class="mb-0">You need to Sign In first .</p>
+      </div>
+      <div class="loginBtn text-center mt-3">
+        <a href="../auth-pages/login.php" class="secondary-theme-button shadow btn bg-brown">Ok</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- request -->
+<div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="requestTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content loginPopup">
       <div class="closebtn">
@@ -117,10 +138,10 @@
       <div class="pop-up-content text-center">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
         <h4 class="mb-1">System Message!</h4>
-        <p class="mb-0">Your adoption request send to private owner successfully!</p>
+        <p class="mb-0">Your request has been sent.</p>
       </div>
       <div class="loginBtn text-center mt-3">
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Continue</button>
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Ok</button>
       </div>
     </div>
   </div>
@@ -259,27 +280,53 @@
 <div class="modal fade" id="reportAd" tabindex="-1" role="dialog" aria-labelledby="reportAdTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content loginPopup">
+      <div class="d-flex justify-content-between">
+        <div class="pl-3 title">
+          <h3 class="font-weight-normal">Report</h3>
+        </div>
+        <div class="closebtn">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-up-content text-center px-3">
+        <div class="form-group text-left">
+          <label for="report" class="font-weight-bold text-dark">
+            Report
+          </label>
+          <textarea name="report" id="report" class="form-control" placeholder="Enter Reason" value="" rows="5" spellcheck="false">                                        </textarea>
+        </div>
+      </div>
+      <div class="loginBtn text-center mt-3 d-flex justify-content-center gap-15">
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal" data-toggle="modal" data-target="#reported">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- update profile -->
+<div class="modal fade" id="reported" tabindex="-1" role="dialog" aria-labelledby="reportedTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loginPopup">
       <div class="closebtn">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="pop-up-content text-center px-3">
+      <div class="pop-up-content text-center">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
-        <div class="form-group text-left">
-          <label for="report" class="font-weight-bold text-dark">
-            Report
-          </label>
-          <textarea name="report" id="report" class="form-control bg-light rounded-10" placeholder="Enter Here" value="" rows="5" spellcheck="false">                                        </textarea>
-        </div>
+        <h4 class="mb-1">System Message!</h4>
+        <p class="mb-0">Ad has been reported</p>
       </div>
-      <div class="loginBtn text-center mt-3 d-flex justify-content-center gap-15">
-        <button class="secondary-theme-button shadow btn borderBtn" data-dismiss="modal">Cancel</button>
-        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Report</button>
+      <div class="loginBtn text-center mt-3">
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">OK</button>
       </div>
     </div>
   </div>
 </div>
+
 
 <!-- write review-->
 <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="reviewTitle" aria-hidden="true">

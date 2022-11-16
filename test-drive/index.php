@@ -6,8 +6,8 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-12 mb-4">
                 <div class="form-head">
-                    <h5 class="">Home <i class="fa fa-chevron-right"></i><span class="text-theme-primary"> Contact Us</span> </h5>
-                    <h3 class="font-weight-bold">Contact Us</h3>
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> Used Cars <i class="fa fa-chevron-right"></i> Toyota Prius 2022 <i class="fa fa-chevron-right"></i><span class="text-theme-primary"> Test Drive</span> </h5>
+                    <h3 class="font-weight-bold">Test Drive</h3>
                 </div>
             </div>
             <div class="col-md-6">
@@ -37,23 +37,47 @@ include('../layout/loggedin-header.php');
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="subject">
-                                            Subject <span class="required">*</span>
+                                            Contact Number <span class="required">*</span>
                                         </label>
-                                        <input type="text" placeholder="Enter Subject" class="form-control shadow border-0" id="subject">
+                                        <input type="number" placeholder="Contact Number" class="form-control shadow border-0" id="subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Car Name <span class="required">*</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Car Name" class="form-control shadow border-0" id="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Make <span class="required">*</span>
+                                        </label>
+                                        <input type="text" placeholder="Toyota" class="form-control shadow border-0" id="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="subject">
+                                            Year <span class="required">*</span>
+                                        </label>
+                                        <input type="number" placeholder="Enter Year" class="form-control shadow border-0" id="subject">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="discription">
-                                            Description
+                                            Details
                                         </label>
-                                        <textarea name="pet-category" id="discription" class="form-control shadow border-0" placeholder="Enter Description" value="" rows="5">
+                                        <textarea name="details" id="discription" class="form-control shadow border-0" placeholder="Enter Details" value="" rows="5">
                                         </textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="loginBtn my-4">
-                                <button class="secondary-theme-button shadow btn bg-brown py-2" type="button" data-target="#updateAd" data-toggle="modal">Submit</button>
+                                <button class="secondary-theme-button shadow btn bg-brown py-2" type="button" data-target="#request" data-toggle="modal">Submit</button>
                             </div>
                         </form>
                     </div>

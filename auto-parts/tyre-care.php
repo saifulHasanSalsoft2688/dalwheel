@@ -7,7 +7,7 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcurm">
-                    <p><a href="#" class="text-dark">Home</a> > <a href="#" class="text-theme-primary">User Car</a></p>
+                    <p><a href="#" class="text-dark">Home</a> > User Car > <a href="#" class="text-theme-primary">Car Care</a></p>
                 </div>
                 <div class="listing-title mb-3">
                     <h3 class="font-weight-bold">Auto Parts</h3>

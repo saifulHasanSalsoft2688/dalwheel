@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="listing-page py-5">
+<section class="inspection-report">
     <div class="container">
         <div class="box my-4">
             <div class="row">
@@ -18,7 +18,7 @@ include('../layout/loggedin-header.php');
             <!--  -->
             <div class="row my-3">
                 <div class="col-12  mb-3">
-                    <h6 class="secTitle fw600 mb-0 my-2">Descriptions</h6>
+                    <h6 class="secTitle fw600 mb-0 my-2 font-weight-bold">Descriptions</h6>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="descBox my-3">
@@ -150,7 +150,7 @@ include('../layout/loggedin-header.php');
                         </div>
                         <!-- Car Inspection Detail -->
                         <div class="col-12">
-                            <h5 class="secTitle my-5">Car Inspection Detail</h5>
+                            <h5 class="secTitle my-5 font-weight-bold">Car Inspection Detail</h5>
                         </div>
                         <!-- Body Frame -->
                         <div class="col-xl-6 col-lg-10">

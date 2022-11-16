@@ -38,7 +38,7 @@ include('../layout/header.php');
                                     <a href="forgot-password-1.php" class="colWhite mt-2"><u>Forget password?</u></a>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <button class="main-btn w-100">Sign In</button>
+                                    <button class="main-btn w-100" id="sign-in">Sign In</button>
                                     <p class="my-3 colWhite">Already have an Account? <a href="./signUp.php" class="text-decoration-underline">Sign Up Now</a></p>
                                 </div>
                             </form>

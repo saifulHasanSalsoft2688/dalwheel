@@ -1,17 +1,34 @@
 AOS.init();
 
+jQuery('#logout').click(function(){
+  localStorage.setItem("session", 'false');
+  window.location = '../auth-pages/login.php'
+});
+
+
+jQuery('#sign-in').click(function(){
+  localStorage.setItem("session", 'true');
+});
+
+var sessions = localStorage.getItem("session");
+if(sessions == 'true') {
+  jQuery('.guest-menu-bar').hide();
+  jQuery('.login-menu-bar').show();
+}
+
+
 jQuery(window).scroll(function (event) {
   var scroll = jQuery(window).scrollTop();
   if (scroll > 2) {
     jQuery('.guest-header').css('transition', '.2s');
     jQuery('.guest-header').addClass('bg-white border-bottom');
     jQuery('.guest-header').removeClass('default');
-    jQuery('.guest-header img').css('width', '50px');
+    jQuery('.guest-header .navbar-brand img').css('width', '50px');
 
   } else {
     jQuery('.guest-header').removeClass('bg-white border-bottom default');
     jQuery('.guest-header').addClass('default');
-    jQuery('.guest-header img').css('width', 'auto');
+    jQuery('.guest-header .navbar-brand img').css('width', 'auto');
   }
 
   // headlight 
@@ -78,9 +95,8 @@ jQuery(".regular").slick({
 jQuery('.center').slick({
   dots: true,
   autoplay: true,
-  centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 4,
+  slidesToShow: 3,
   prevArrow: false,
   nextArrow: false,
   responsive: [
@@ -348,3 +364,4 @@ $(".product-thumbnail").slick({
   ],
 });
 // Add more input types  
+
