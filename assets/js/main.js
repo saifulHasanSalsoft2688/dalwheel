@@ -260,34 +260,91 @@ jQuery('.back-page a').attr('href', 'javascript:history.back()');
 
 
 var rangeOne = document.querySelector('input[name="rangeOne"]'),
-		rangeTwo = document.querySelector('input[name="rangeTwo"]'),
-		outputOne = document.querySelector('.outputOne'),
-		outputTwo = document.querySelector('.outputTwo'),
-		inclRange = document.querySelector('.incl-range'),
-		updateView = function () {
-			if (this.getAttribute('name') === 'rangeOne') {
-				outputOne.innerHTML = '$'+ this.value;
-				outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
-			} else {
-				outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
-				outputTwo.innerHTML = '$'+ this.value
-			}
-			if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
-				inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
-				inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
-			} else {
-				inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
-				inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
-			}
-		};
+  rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+  outputOne = document.querySelector('.outputOne'),
+  outputTwo = document.querySelector('.outputTwo'),
+  inclRange = document.querySelector('.incl-range'),
+  updateView = function () {
+    if (this.getAttribute('name') === 'rangeOne') {
+      outputOne.innerHTML = '$' + this.value;
+      outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
+    } else {
+      outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
+      outputTwo.innerHTML = '$' + this.value
+    }
+    if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+      inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+      inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+    } else {
+      inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+      inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
+    }
+  };
 
-	document.addEventListener('DOMContentLoaded', function () {
-		updateView.call(rangeOne);
-		updateView.call(rangeTwo);
-		$('input[type="range"]').on('mouseup', function() {
-			this.blur();
-		}).on('mousedown input', function () {
-			updateView.call(this);
-		});
-	});
- 
+document.addEventListener('DOMContentLoaded', function () {
+  updateView.call(rangeOne);
+  updateView.call(rangeTwo);
+  $('input[type="range"]').on('mouseup', function () {
+    this.blur();
+  }).on('mousedown input', function () {
+    updateView.call(this);
+  });
+});
+
+
+
+$(".product-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  fade: true,
+  asNavFor: ".product-thumbnail",
+  autoplay: false,
+  arrows: true,
+  prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left sliderIcons' aria-hidden='true'></i></button>",
+  nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right sliderIcons' aria-hidden='true'></i></button>",
+});
+$(".product-thumbnail").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: ".product-slider",
+  dots: false,
+  arrows: false,
+  focusOnSelect: true,
+  loop: true,
+  responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+  ],
+});
+// Add more input types  
