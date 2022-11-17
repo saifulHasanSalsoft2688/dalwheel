@@ -2,234 +2,399 @@
 include('../layout/loggedin-header.php');
 ?>
 
-<section class="cart py-5">
+<section class="checkout py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="listing-title text-center mb-4">
-                    <h1 class="font-weight-bold">Checkout</h1>
+                <div class="listing-title mb-3">
+                    <h3 class="font-weight-bold">Checkout</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-9">
                 <form action="#">
-                    <div class="delivery-details shadow px-md-5 p-4 mb-5">
-                        <div class="titleBox d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0">Delivery Details</h4>
-                            <button class="btn border-0 bg-transparent editBtn" type="button">
-                                <h4 class="mb-0"><i class="fa fa-edit"></i></h4>
-                            </button>
-                        </div>
-                        <div class="pt-4 wizard">
-                            <div class="form-group">
-                                <div class="position-relative">
-                                    <input type="text" placeholder="Enter City, State or Zip" class="form-control rounded-pill bg-light" id="zip">
-                                    <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
+                    <div class="steps-icons my-4">
+                        <div class="d-flex justify-content-between">
+                            <div class="flex-grow-1 step-box-container step-active">
+                                <div class="step-box shadow">
+                                    <i class="fa fa-address-card" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <div class="form-group text-center mb-0">
-                                <button class="btn bg-brown rounded-pill border-0 px-5 text-white showFileds" type="button">Continue</button>
+                            <div class="flex-grow-1 step-box-container">
+                                <div class="step-box shadow">
+                                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="edit-zip showBox" style="display: none;">
-                            <p class="mb-0">144 Union Ave, Los Angeles New york</p>
+                            <div class="flex-grow-1 step-box-container">
+                                <div class="step-box shadow">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="delivery-details shadow px-md-5 p-4 mb-5">
-                        <div class="titleBox d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0">Contact Details</h4>
-                            <button class="btn border-0 bg-transparent editBtn" type="button">
-                                <h4 class="mb-0"><i class="fa fa-edit"></i></h4>
-                            </button>
-                        </div>
-                        <div class="pt-4 wizard">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">
-                                            Name <span class="required">*</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter First Name" class="form-control bg-light rounded-pill" id="name">
+                    <div class="card-item show">
+                        <div class="delivery-details my-5">
+                            <div class="titleBox d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-weight-bold">Contact Information</h4>
+                            </div>
+                            <div class="pt-4 wizard">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Name <span class="required">*</span>
+                                            </label>
+                                            <input type="text" placeholder="Enter First Name" class="form-control shadow border-0" id="name">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="lname">
-                                            Last Name <span class="required">*</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter Last Name" class="form-control bg-light rounded-pill" id="lname">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="lname">
+                                                Last Name <span class="required">*</span>
+                                            </label>
+                                            <input type="text" placeholder="Enter Last Name" class="form-control shadow border-0" id="lname">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="phone">
-                                            Phone Number <span class="required">*</span>
-                                        </label>
-                                        <input type="number" placeholder="Enter Phone Number" class="form-control bg-light rounded-pill" id="phone">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="phone">
+                                                Phone Number <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter Phone Number" class="form-control shadow border-0" id="phone">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="email">
-                                            Email Address <span class="required">*</span>
-                                        </label>
-                                        <input type="email" placeholder="Enter Email Address" class="bg-light form-control rounded-pill" id="email">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email Address <span class="required">*</span>
+                                            </label>
+                                            <input type="email" placeholder="Enter Email Address" class="form-control shadow border-0" id="email">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group text-center mb-0 mt-3">
-                                <button class="btn bg-brown rounded-pill border-0 px-5 text-white showFileds" type="button">Continue</button>
+                        </div>
+
+                        <div class="bolling-address mb-5">
+                            <div class="titleBox d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-weight-bold">Billing Address</h4>
+                            </div>
+                            <div class="pt-4 wizard">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="address">
+                                                Address Line 2
+                                            </label>
+                                            <input type="text" placeholder="Address Line 2" class="form-control shadow border-0" id="address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="city">
+                                                City <span class="required">*</span>
+                                            </label>
+                                            <select class="form-control shadow border-0" name="city" id="city">
+                                                <option value="">Select City</option>
+                                                <option value="">Chicago</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="state">
+                                                State <span class="required">*</span>
+                                            </label>
+                                            <select class="form-control shadow border-0" name="state" id="state">
+                                                <option value="">Select State</option>
+                                                <option value="">A2213</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="postal">
+                                                ZIP / Postal Code <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter Postal Code" class="form-control shadow border-0" id="postal">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="shippingAddress">
+                                            <label class="form-check-label" for="shippingAddress">Use above details as shipping address</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- edit fields  -->
-                        <div class="edit-feild showBox" style="display: none;">
-                            <p class="mb-1">First Name: <span class="name">James</span></p>
-                            <p class="mb-1">Last Name: <span class="lname">Anderson</span></p>
-                            <p class="mb-1">Phone Number: <span class="phoneNumber">+012 345 6789</span></p>
-                            <p class="mb-1">Email Address: <span class="email">ABXZ@gmail.com</span></p>
+
+                        <div class="shipping-address mb-5">
+                            <div class="titleBox d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-weight-bold">Shipping Address</h4>
+                            </div>
+                            <div class="pt-4 wizard">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="address">
+                                                Address Line 2
+                                            </label>
+                                            <input type="text" placeholder="Address Line 2" class="form-control shadow border-0" id="address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="city">
+                                                City <span class="required">*</span>
+                                            </label>
+                                            <select class="form-control shadow border-0" name="city" id="city">
+                                                <option value="">Select City</option>
+                                                <option value="">Chicago</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="state">
+                                                State <span class="required">*</span>
+                                            </label>
+                                            <select class="form-control shadow border-0" name="state" id="state">
+                                                <option value="">Select State</option>
+                                                <option value="">A2213</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="postal">
+                                                ZIP / Postal Code <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter Postal Code" class="form-control shadow border-0" id="postal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="delivery-details shadow px-md-5 p-4 mb-5">
-                        <div class="titleBox d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0">Payment Details</h4>
-                            <button class="btn border-0 bg-transparent editBtn" type="button">
-                                <h4 class="mb-0"><i class="fa fa-edit"></i></h4>
-                            </button>
-                        </div>
-                        <div class="pt-4 wizard">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">
-                                            Name <span class="required">*</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter Name" class="form-control bg-light rounded-pill" id="name">
+                    <div class="card-item">
+                        <div class="delivery-details my-5">
+                            <div class="titleBox d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-weight-bold">Payment Information</h4>
+                            </div>
+                            <div class="pt-4 wizard">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Name <span class="required">*</span>
+                                            </label>
+                                            <input type="text" placeholder="Enter Name" class="form-control shadow border-0" id="name">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="cardnumber">
-                                            Card Number <span class="required">*</span>
-                                        </label>
-                                        <input type="number" placeholder="Enter Card Number" class="form-control bg-light rounded-pill" id="cardnumber">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="cardnumber">
+                                                Card Number <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter Card Number" class="form-control shadow border-0" id="cardnumber">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="cvv">
-                                            CVV Number <span class="required">*</span>
-                                        </label>
-                                        <input type="number" placeholder="Enter CVV" class="form-control bg-light rounded-pill" id="cvv">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="cvv">
+                                                CVV Number <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter CVV" class="form-control shadow border-0" id="cvv">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="vDate">
-                                            Validity Date <span class="required">*</span>
-                                        </label>
-                                        <input type="number" placeholder="Enter Validity Date" class="form-control bg-light rounded-pill" id="vDate">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="vDate">
+                                                Validity Date <span class="required">*</span>
+                                            </label>
+                                            <input type="number" placeholder="Enter Validity Date" class="form-control shadow border-0" id="vDate">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group text-center mb-0 mt-3">
-                                <button class="btn bg-brown rounded-pill border-0 px-5 text-white showFileds" type="button">Continue</button>
-                            </div>
-                        </div>
-                        <!-- payment fields  -->
-                        <div class="payment-feild showBox" style="display: none;">
-                            <p class="mb-1">Name: <span class="pname">Tom Albert</span></p>
-                            <p class="mb-1">Card Number: <span class="cardNum">1458*********321</span></p>
-                            <p class="mb-1">Validity Date: <span class="validDate">07/22</span></p>
-                            <p class="mb-1">CVV: <span class="cvv">589</span></p>
                         </div>
                     </div>
-                    <div class="submitButn" style="display: none;">
-                        <div class="form-group text-center mb-0 mt-3">
-                            <button class="btn bg-brown rounded-pill border-0 px-5 text-white showFileds" type="button">Place Order</button>
+                    <div class="card-item">
+                        <div class="table-responsive cart-detail shadow my-5">
+                            <table class="table">
+                                <thead class="bg-black text-white">
+                                    <tr>
+                                        <th scope="col">Products</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
+                                                    <div class="cart-image">
+                                                        <figure class="mb-0">
+                                                            <a href="#">
+                                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="product-title">
+                                                        <p class="mb-0">Newest Couch</p>
+                                                        <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            $820
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
+                                                    <div class="cart-image">
+                                                        <figure class="mb-0">
+                                                            <a href="#">
+                                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="product-title">
+                                                        <p class="mb-0">Newest Couch</p>
+                                                        <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            $820
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
+                                                    <div class="cart-image">
+                                                        <figure class="mb-0">
+                                                            <a href="#">
+                                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="product-title">
+                                                        <p class="mb-0">Newest Couch</p>
+                                                        <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            $820
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
+                                                    <div class="cart-image">
+                                                        <figure class="mb-0">
+                                                            <a href="#">
+                                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="product-title">
+                                                        <p class="mb-0">Newest Couch</p>
+                                                        <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            $820
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="submitButn">
+                        <div class="form-group mb-0 mt-3">
+                            <button class="btn-theme-solid" type="button">Continue</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-3">
-                <div class="cart-total shadow p-3">
-                    <div class="cartTotalBox">
+                <div class="cart-total shadow">
+                    <div class="title-summary text-center bg-black text-white py-2">
+                        <h5 class="mb-0">Summary</h5>
+                    </div>
+                    <div class="cartTotalBox p-3">
                         <div class="titleBox">
-                            <h4 class="mb-4 h5">Product Details</h4>
-                        </div>
-                        <div class="total-products">
-                            <div class="product-info mb-3 border-bottom pb-4">
-                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
-                                    <div class="cart-image">
-                                        <figure class="mb-0">
-                                            <a href="#">
-                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
-                                            </a>
-                                        </figure>
+                            <div class="cartBox">
+                                <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
+                                    <div class="leftContent">
+                                        <p class="mb-0">Subtotal</p>
                                     </div>
-                                    <div class="product-title">
-                                        <p class="mb-0">Newest Couch</p>
-                                        <p class="price mb-0">$820</p>
+                                    <div class="rightCartContent">
+                                        <p class="mb-0">$100.00</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-info mb-3 border-bottom pb-4">
-                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
-                                    <div class="cart-image">
-                                        <figure class="mb-0">
-                                            <a href="#">
-                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
-                                            </a>
-                                        </figure>
+                                <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
+                                    <div class="leftContent">
+                                        <p class="mb-0">Delivery Charges</p>
                                     </div>
-                                    <div class="product-title">
-                                        <p class="mb-0">Newest Couch</p>
-                                        <p class="price mb-0">$820</p>
+                                    <div class="rightCartContent">
+                                        <p class="mb-0">$5.00</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-info mb-3 pb-4">
-                                <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
-                                    <div class="cart-image">
-                                        <figure class="mb-0">
-                                            <a href="#">
-                                                <img src="../assets/images/cart-1.png" alt="Newest Couch" draggable="false" class="mw-100">
-                                            </a>
-                                        </figure>
+                                <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
+                                    <div class="leftContent">
+                                        <p class="mb-0 font-weight-bold">Total:</p>
                                     </div>
-                                    <div class="product-title">
-                                        <p class="mb-0">Newest Couch</p>
-                                        <p class="price mb-0">$820</p>
+                                    <div class="rightCartContent">
+                                        <p class="mb-0 theme-primary-text font-weight-bold">$100.00</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="titleBox">
-                            <h4 class="mb-4 h5">Order Summary</h4>
-                        </div>
-                        <div class="cart-items-cost">
-                            <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
-                                <div class="leftContent">
-                                    <p class="mb-0">Subtotal</p>
-                                </div>
-                                <div class="rightCartContent">
-                                    <p class="mb-0">$100.00</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
-                                <div class="leftContent">
-                                    <p class="mb-0">Delivery Charges</p>
-                                </div>
-                                <div class="rightCartContent">
-                                    <p class="mb-0">$5.00</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
-                                <div class="leftContent">
-                                    <p class="mb-0 font-weight-bold">Total:</p>
-                                </div>
-                                <div class="rightCartContent">
-                                    <p class="mb-0 theme-primary-text font-weight-bold">$100.00</p>
                                 </div>
                             </div>
                         </div>
@@ -239,6 +404,14 @@ include('../layout/loggedin-header.php');
         </div>
     </div>
 </section>
+
+<!-- 
+<div class="delivery-details shadow px-md-5 p-4 mb-5">
+    <div class="titleBox d-flex align-items-center justify-content-between">
+        <h4 class="mb-0 font-weight-bold">Payment Details</h4>
+    </div>
+  
+</div> -->
 
 
 <?php

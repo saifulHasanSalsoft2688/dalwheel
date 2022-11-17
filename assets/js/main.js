@@ -17,6 +17,58 @@ if(sessions == 'true') {
 }
 
 
+jQuery('.submitButn button').click(function(index){
+  var classCheck = jQuery('.show').next().hasClass('card-item');
+  var activeBox = jQuery('.step-active').next().hasClass('step-box-container');
+  if(classCheck == true) {
+          jQuery('.step-active').next('.step-box-container').addClass('step-active');
+          jQuery('.show').next('.card-item').addClass('show');
+          jQuery('.show').prev('.card-item').removeClass('show');
+  } else {
+      jQuery(this).text('Place Order');
+      jQuery(this).attr('data-toggle', 'modal');
+      jQuery(this).attr('data-target', '#order');
+  }
+  
+  });
+
+
+// order status 
+
+jQuery('table a').click(function(){
+    var status = jQuery(this).parents('tr').find('.status').text();
+    localStorage.setItem('status', status);
+});
+
+
+var getStatus = localStorage.getItem('status');
+if(getStatus == "In Progress") {
+    jQuery('.order-status').text(getStatus);
+    jQuery('.order-status').addClass('text-inProgress');
+    jQuery('.order-status').removeClass('text-deliver');
+    jQuery('.order-status').removeClass('text-pending');
+}
+
+
+if(getStatus == "Pending") {
+  jQuery('.order-status').text(getStatus);
+  jQuery('.order-status').addClass('text-pending');
+  jQuery('.order-status').removeClass('text-inProgress');
+  jQuery('.order-status').removeClass('text-deliver');
+}
+
+if(getStatus == "Delivered") {
+  jQuery('.order-status').text(getStatus);
+  jQuery('.order-status').addClass('text-deliver');
+  jQuery('.order-status').removeClass('text-inProgress');
+  jQuery('.order-status').removeClass('text-pending');
+}
+
+// end 
+
+
+
+
 jQuery(window).scroll(function (event) {
   var scroll = jQuery(window).scrollTop();
   if (scroll > 2) {
@@ -130,7 +182,7 @@ jQuery(".banners").slick({
   infinite: true,
   slidesToShow: 1,
   vertical: true,
-  autoplay: false,
+  autoplay: true,
   speed: 2000,
   autoplaySpeed: 4000,
   cssEase: 'ease-in-out',

@@ -359,3 +359,25 @@
     </div>
   </div>
 </div>
+
+
+<!-- update signup -->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="orderTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loginPopup">
+      <div class="closebtn">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="pop-up-content text-center">
+        <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
+        <h4 class="mb-1">Successfully</h4>
+        <p class="mb-0">Order successfully placed.</p>
+      </div>
+      <div class="loginBtn text-center mt-3">
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -6,19 +6,18 @@ include('../layout/loggedin-header.php');
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="listing-title text-center">
-                    <h1 class="font-weight-bold">Cart</h1>
+                <div class="listing-title mb-3">
+                    <h3 class="font-weight-bold">My Shopping Cart</h3>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-9">
-                <div class="cart-detail shadow p-3 h-100">
+            <div class="col-md-12 mb-5">
+                <div class="table-responsive cart-detail shadow p-3 h-100">
                     <table class="table">
-                        <thead class="bg-theme-primary text-white">
+                        <thead class="bg-black text-white">
                             <tr>
                                 <th scope="col">Products</th>
-                                <th scope="col">Price</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Total</th>
                                 <th></th>
@@ -38,12 +37,10 @@ include('../layout/loggedin-header.php');
                                             </div>
                                             <div class="product-title">
                                                 <p class="mb-0">Newest Couch</p>
+                                                <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
-                                    $820
                                 </td>
                                 <td>
                                     <div class="input-group-field rounded-arrow shadow">
@@ -60,7 +57,11 @@ include('../layout/loggedin-header.php');
                                     $820
                                 </td>
                                 <td>
-                                    <button class="btn bg-white border-0 shadow removeProduct"><i class="fa fa-times"></i></button>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-refresh"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-heart"></i></button>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -76,12 +77,10 @@ include('../layout/loggedin-header.php');
                                             </div>
                                             <div class="product-title">
                                                 <p class="mb-0">Newest Couch</p>
+                                                <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
-                                    $820
                                 </td>
                                 <td>
                                     <div class="input-group-field rounded-arrow shadow">
@@ -98,7 +97,11 @@ include('../layout/loggedin-header.php');
                                     $820
                                 </td>
                                 <td>
-                                    <button class="btn bg-white border-0 shadow removeProduct"><i class="fa fa-times"></i></button>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-refresh"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-heart"></i></button>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -114,12 +117,10 @@ include('../layout/loggedin-header.php');
                                             </div>
                                             <div class="product-title">
                                                 <p class="mb-0">Newest Couch</p>
+                                                <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
-                                    $820
                                 </td>
                                 <td>
                                     <div class="input-group-field rounded-arrow shadow">
@@ -136,7 +137,11 @@ include('../layout/loggedin-header.php');
                                     $820
                                 </td>
                                 <td>
-                                    <button class="btn bg-white border-0 shadow removeProduct"><i class="fa fa-times"></i></button>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-refresh"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-heart"></i></button>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -152,12 +157,10 @@ include('../layout/loggedin-header.php');
                                             </div>
                                             <div class="product-title">
                                                 <p class="mb-0">Newest Couch</p>
+                                                <p class="f-14 mb-0"><a href="#" class="text-secondary">Car Care</a> | <a href="#" class="text-secondary">Car Top Covers</a> </p>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
-                                    $820
                                 </td>
                                 <td>
                                     <div class="input-group-field rounded-arrow shadow">
@@ -174,18 +177,24 @@ include('../layout/loggedin-header.php');
                                     $820
                                 </td>
                                 <td>
-                                    <button class="btn bg-white border-0 shadow removeProduct"><i class="fa fa-times"></i></button>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-white text-secondary border-0 removeProduct"><i class="fa fa-trash"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-refresh"></i></button>
+                                        <button class="btn bg-white text-secondary border-0"><i class="fa fa-heart"></i></button>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="cart-total shadow p-3 h-100">
-                    <div class="cartTotalBox">
+            <div class="col-md-4 ml-auto">
+                <div class="cart-total shadow h-100">
+                    <div class="title-summary text-center bg-black text-white py-2">
+                        <h5 class="mb-0">Summary</h5>
+                    </div>
+                    <div class="cartTotalBox p-3">
                         <div class="titleBox">
-                            <h4 class="mb-4 h5">Order Summary</h4>
                             <div class="cartBox">
                                 <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
                                     <div class="leftContent">
@@ -213,8 +222,8 @@ include('../layout/loggedin-header.php');
                                 </div>
                             </div>
                             <div class="text-center my-2">
-                                <a class="bg-brown d-block rounded-pill border-0 py-2 text-white mb-3" href="../checkout/">Proceed to Checkout</a>
-                                <a class="bg-theme-outline d-block rounded-pill border-0 py-2" href="../shop">Continue Shopping</a>
+                                <a class="btn-theme-solid mb-3" href="../checkout/">Proceed to Checkout</a>
+                                <!-- <a class="btn-theme-outline" href="../shop">Continue Shopping</a> -->
                             </div>
                         </div>
                     </div>
