@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+                
+
 :root {
     --text-primary-theme: #C90000;
     --seegreen: #00CCDB;
@@ -9,7 +12,7 @@
 }
 
 body {
-    font-family: Qanelas;
+    font-family: 'Euclid Circular A', sans-serif;
     font-weight: 400;
 }
 
@@ -111,7 +114,9 @@ body {
     opacity: 1;
 }
 
-
+.reasonRejected {
+    display: none;
+}
 
 .banners .slick-arrow {
     position: absolute;
@@ -121,6 +126,29 @@ body {
     background-color: transparent;
     border: none;
     color: #fff;
+}
+
+.featuredAdcontent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featuredAdcontent ul li {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+.featuredAdcontent ul li i {
+    color: #c90000;
+    padding-right: 5px;
+}
+
+.featuredPackage label {
+    font-size: 14px;
+    color: #6c757d;
+    font-family: 'euclid circular a';
 }
 
 .banners button.slick-prev.slick-arrow {
@@ -218,7 +246,7 @@ header::after {
 }
 
 .default .navbar-nav li>a,
-.default .navbar-nav {
+.default .navbar-nav button {
     color: #fff !important;
 }
 
@@ -816,11 +844,11 @@ span.count {
     padding: 0 10px;
 }
 
-.dropdown-list a {
+.default .dropdown-list > li > a, .dropdown-list > li > a {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: #787878;
+    color: #787878 !important;
     font-size: 14px;
 }
 
@@ -834,7 +862,7 @@ span.count {
 
 .avatar-box button {
     font-size: 16px;
-    font-family: 'Qanelas';
+    font-family: 'Euclid Circular A', sans-serif';
 }
 
 .loginOption {
@@ -1025,39 +1053,22 @@ span.count {
     padding: 70px 0;
 }
 
-.gallery {
+/* .gallery {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-}
+    flex-direction: column;
+} */
 
 .gallery img {
     width: 115px;
     height: 115px;
     object-fit: cover;
     border-radius: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
 }
 
-.uploadBtn {
-    width: 115px;
-    height: 115px;
-    display: flex;
-    border: 2px dashed #27aae1;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: aliceblue;
-}
-
-.uploadBtn button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: transparent;
-    font-size: 34px;
-    color: #27AAE1;
-}
 
 /* product details  */
 
@@ -1472,7 +1483,9 @@ ul#pills-tab {
 }
 
 .text-requested {
-    color: #BD305D;
+    color: var(--text-primary-theme);
+    border: 1px dashed var(--text-primary-theme);
+    padding: 8px;
 }
 
 .text-pending {
@@ -2199,7 +2212,7 @@ form a {
 }
 
 .secTitle {
-    font-family: 'Qanelas';
+    font-family: 'Euclid Circular A', sans-serif';
     font-size: 20px;
 }
 
@@ -2609,6 +2622,10 @@ form a {
     color: var(--text-primary-theme);
 }
 
+.listing-title h5 {
+    margin-bottom: 20px;
+}
+
 .step-box-container {
     position: relative;
 }
@@ -2680,7 +2697,7 @@ form a {
     }
 
     .default .navbar-nav li>a,
-    .default .navbar-nav {
+    .default .navbar-nav button {
         font-size: 12px;
     }
 

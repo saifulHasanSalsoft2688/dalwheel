@@ -7,8 +7,8 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-12">
                 <div class="listing-title mb-3">
-                    <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="status text-theme-primary">My Ads</span> </h5>
-                    <h3 class="font-weight-bold">My Ads</h3>
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="status text-theme-primary">Test Drive Request</span> </h5>
+                    <h3 class="font-weight-bold">Test Drive Request</h3>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@ include('../layout/loggedin-header.php');
             <div class="col-md-12">
                 <div class="seachedFilter border-0 bg-transparent">
                     <div class="row justify-content-between mb-3">
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                             <div class="form-group d-flex align-items-center gap-15 mb-0 flex-wrap">
                                 <label class="flex-shrink-0 mb-md-0">
                                     Show
@@ -25,11 +25,10 @@ include('../layout/loggedin-header.php');
                                 <p class="mb-0">Entries</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
-                                <p class="mb-0 flex-shrink-0">Search by Ad Id</p>
+                        <div class="col-md-3">
+                            <div class="form-group">
                                 <div class="position-relative">
-                                    <input type="text" placeholder="Search...." class="form-control" id="password">
+                                    <input type="text" placeholder="Search Here...." class="form-control" id="password">
                                     <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
@@ -42,11 +41,9 @@ include('../layout/loggedin-header.php');
                             <tr>
                                 <th scope="col">S.No</th>
                                 <th scope="col">Ad Id</th>
-                                <th scope="col">Car Name</th>
-                                <th scope="col">Car Category</th>
-                                <th>Date</th>
-                                <th scope="col">Order Status</th>
-                                <th>Test Drive Request</th>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col"> Date</th>
                                 <th scope="col">Actions</th>
                             </tr>
                         </thead>
@@ -54,61 +51,51 @@ include('../layout/loggedin-header.php');
                             <tr>
                                 <th>01</th>
                                 <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com </td>
                                 <td>mm/dd/yyyy</td>
-                                <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
                                 <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                    <p class="mb-0"><a class="text-secondary" href="./test-drive-detail.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th>01</th>
                                 <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com </td>
                                 <td>mm/dd/yyyy</td>
-                                <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
                                 <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                    <p class="mb-0"><a class="text-secondary" href="./test-drive-detail.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th>01</th>
                                 <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com </td>
                                 <td>mm/dd/yyyy</td>
-                                <td><span class="status text-requested">Rejected</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
                                 <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                    <p class="mb-0"><a class="text-secondary" href="./test-drive-detail.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th>01</th>
                                 <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com </td>
                                 <td>mm/dd/yyyy</td>
-                                <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
                                 <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                    <p class="mb-0"><a class="text-secondary" href="./test-drive-detail.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th>01</th>
                                 <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
+                                <td>ABC</td>
+                                <td>abc@gmail.com </td>
                                 <td>mm/dd/yyyy</td>
-                                <td><span class="status text-deliver">Approved</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
                                 <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                    <p class="mb-0"><a class="text-secondary" href="./test-drive-detail.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
                             </tr>
                         </tbody>

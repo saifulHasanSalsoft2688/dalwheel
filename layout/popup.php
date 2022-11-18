@@ -96,7 +96,7 @@
       <div class="pop-up-content text-center pb-3">
         <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
         <h4 class="mb-1">System Message!</h4>
-        <p class="mb-0">Your message has been sent.</p>
+        <p class="mb-0">Ad request has been submitted.</p>
       </div>
       <div class="loginBtn text-center mt-3">
         <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Ok</button>
@@ -327,6 +327,52 @@
   </div>
 </div>
 
+<!-- Payment -->
+<div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="paymentTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loginPopup">
+      <div class="closebtn">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="pop-up-content text-center">
+        <img src="../assets/images/popup-header.png" alt="Login" draggable="false" class="mw-100 mb-4">
+        <h4 class="mb-1">System Message!</h4>
+        <p class="mb-0">Payment has been done.</p>
+      </div>
+      <div class="loginBtn text-center mt-3">
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- REejetec Reason-->
+<div class="modal fade" id="reason" tabindex="-1" role="dialog" aria-labelledby="reasonTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content loginPopup">
+      <div class="closebtn d-flex justify-content-between align-items-center p-3 border-bottom mb-3" style="right: 0;">
+        <h4 class="mb-0">Rejected Reason</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="pop-up-content text-left px-3 py-0">
+        <div class="form-group text-left">
+          <h6 class="font-weight-bold text-dark">
+            Rejected Reason
+          </h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis </p>
+        </div>
+      </div>
+      <div class="loginBtn text-center mt-3 d-flex justify-content-center gap-15">
+        <button class="secondary-theme-button shadow btn bg-brown" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- write review-->
 <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="reviewTitle" aria-hidden="true">

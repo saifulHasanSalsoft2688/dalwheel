@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="ad-post py-3">
+<section class="ad-post py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-10 m-auto">
@@ -33,7 +33,7 @@ include('../layout/loggedin-header.php');
                     </div>
                     <div class="form-body pt-4">
                         <form action="#" method="POST">
-                            <div class="row">
+                            <div class="row mb-4">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">
@@ -119,10 +119,49 @@ include('../layout/loggedin-header.php');
                                         <input type="number" placeholder="Enter Engine Capacity" class="form-control shadow border-0" id="capacity">
                                     </div>
                                 </div>
-                                <div class="col-md-12 mb-4">
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="title-box">
+                                        <h5>Energy Type</h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="energy" id="petrol" value="petrol">
+                                            <label class="form-check-label" for="petrol">Petrol</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="energy" id="diesel" value="diesel">
+                                            <label class="form-check-label" for="diesel">Diesel</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="energy" id="hybrid" value="hybrid">
+                                            <label class="form-check-label" for="hybrid">Hybrid</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="title-box">
+                                        <h5>Transmission</h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="transmission" id="automatic" value="automatic">
+                                            <label class="form-check-label" for="automatic">Automatic</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="transmission" id="manual" value="manual">
+                                            <label class="form-check-label" for="manual">Manual</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 my-3">
                                     <h5>Features</h5>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="ABS" id="ABS">
@@ -169,7 +208,7 @@ include('../layout/loggedin-header.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="Air Bags" id="Air Bags">
@@ -216,7 +255,7 @@ include('../layout/loggedin-header.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="AM/ FM Radio" id="AM/ FM Radio">
@@ -263,7 +302,7 @@ include('../layout/loggedin-header.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="Alloy Rims" id="Alloy Rims">
@@ -310,43 +349,75 @@ include('../layout/loggedin-header.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="breed">
-                                            Breed
-                                        </label>
-                                        <select name="pet-category" id="breed" class="form-control shadow border-0">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="title-box my-3">
+                                        <h5>Test Drive</h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="drive" id="drive" value="drive">
+                                            <label class="form-check-label" for="drive">Test Drive</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="drive" id="nonavailable" value="nonavailable">
+                                            <label class="form-check-label" for="nonavailable">Non Available</label>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="discription">
-                                            Description
-                                        </label>
-                                        <textarea name="pet-category" id="discription" class="form-control bg-light rounded-20" placeholder="Enter Description" value="" rows="5">
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="upload">
-                                            Upload Media <span class="required">*</span>
-                                        </label>
-                                        <input type="file" id="upload" class="d-none" multiple>
-                                        <div class="gallery">
-                                            <div class="uploadBtn">
-                                                <button type="button"><i class="fa fa-upload"></i></button>
+                                    <h5 class="my-3">Upload Photo</h5>
+                                    <div class="shadow p-3 text-center">
+                                        <div class="form-icon-infomb-3">
+                                            <div class="icon-content text-center">
+                                                <img src="../assets/images/upload-photo.png" alt=" Upload Photos" draggable="false">
+                                                <p class="mb-2"> Adding clear Front, Back and Interior pictures of your car increases
+                                                    the quality of your Ad and gets you noticed more.</p>
+                                                <p class="mb-2"> Photos should be in 'jpeg, jpg, png, gif'
+                                                    format only.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="upload"></label>
+                                            <input type="file" id="upload" class="d-none" multiple>
+                                            <div class="gallery">
+                                                <div class="uploadBtn">
+                                                    <button type="button" class="btn-theme-solid">Add Photo</button>
+                                                    <div class="image-gallery">
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="loginBtn text-center my-4">
-                                <button class="secondary-theme-button shadow btn bg-brown py-2" type="button" data-target="#updateAd" data-toggle="modal">Submit</button>
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <h5 class="my-3">Contact Information</h5>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="number1">
+                                            Mobile Number 1 <span class="required">*</span>
+                                        </label>
+                                        <input type="number" placeholder="Enter Mobile Number" class="form-control shadow border-0" id="number1">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="num2">
+                                            Mobile Number 2 <span class="required">*</span>
+                                        </label>
+                                        <input type="number" placeholder="Enter Mobile Number" class="form-control shadow border-0" id="num2">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn-theme-solid" type="button" data-target="#updateAd" data-toggle="modal">Submit</button>
+                                </div>
                             </div>
                         </form>
                     </div>

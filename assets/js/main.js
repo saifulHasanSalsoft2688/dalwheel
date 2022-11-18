@@ -57,9 +57,17 @@ if(getStatus == "Pending") {
   jQuery('.order-status').removeClass('text-deliver');
 }
 
-if(getStatus == "Delivered") {
+if(getStatus == "Delivered" || getStatus == "Approved") {
   jQuery('.order-status').text(getStatus);
   jQuery('.order-status').addClass('text-deliver');
+  jQuery('.order-status').removeClass('text-inProgress');
+  jQuery('.order-status').removeClass('text-pending');
+}
+
+if(getStatus == "Rejected") {
+  jQuery('.reasonRejected').show();
+  jQuery('.order-status').text(getStatus);
+  jQuery('.order-status').addClass('text-requested');
   jQuery('.order-status').removeClass('text-inProgress');
   jQuery('.order-status').removeClass('text-pending');
 }
