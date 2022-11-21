@@ -23,29 +23,31 @@ include('../layout/loggedin-header.php');
                         <h6 class="secTitle mb-0 fw600 my-2 text-danger"> <sup class="fw400">$</sup> 566.90</h6>
                     </div>
                     <!--  -->
-                    <div class="row features_wrap">
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/calendar.png" alt="calendar">
-                                <p class="mb-0">2020</p>
+                    <div class="features_wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/calendar.png" alt="calendar">
+                                    <p class="mb-0">2020</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/km.png" alt="Speed">
-                                <p class="mb-0">20,220 km</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/km.png" alt="Speed">
+                                    <p class="mb-0">20,220 km</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/hybrid.png" alt="hybrid">
-                                <p class="mb-0">Hybrid</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/hybrid.png" alt="hybrid">
+                                    <p class="mb-0">Hybrid</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/automatic.png" alt="automatic">
-                                <p class="mb-0">Automatic</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/automatic.png" alt="automatic">
+                                    <p class="mb-0">Automatic</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,7 +158,7 @@ include('../layout/loggedin-header.php');
             <div class="col-xl-6">
                 <div class="compare-box">
                     <div class="slider-card">
-                        <img src="../assets/images/c1.png" class="" alt="Slider Image" />
+                        <img src="../assets/images/slide-1.png" class="" alt="Slider Image" />
                     </div>
                     <!--  -->
                     <div class="d-flex align-items-center justify-content-between flex-wrap my-4">
@@ -164,29 +166,31 @@ include('../layout/loggedin-header.php');
                         <h6 class="secTitle mb-0 fw600 my-2 text-danger"> <sup class="fw400">$</sup> 566.90</h6>
                     </div>
                     <!--  -->
-                    <div class="row features_wrap">
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/calendar.png" alt="calendar">
-                                <p class="mb-0">2020</p>
+                    <div class="features_wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/calendar.png" alt="calendar">
+                                    <p class="mb-0">2020</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/km.png" alt="Speed">
-                                <p class="mb-0">20,220 km</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/km.png" alt="Speed">
+                                    <p class="mb-0">20,220 km</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/hybrid.png" alt="hybrid">
-                                <p class="mb-0">Hybrid</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/hybrid.png" alt="hybrid">
+                                    <p class="mb-0">Hybrid</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 text-center cutom_border">
-                            <div class="features_box">
-                                <img src="../assets/images/automatic.png" alt="automatic">
-                                <p class="mb-0">Automatic</p>
+                            <div class="col-lg-3 col-md-6 text-center cutom_border">
+                                <div class="features_box">
+                                    <img src="../assets/images/automatic.png" alt="automatic">
+                                    <p class="mb-0">Automatic</p>
+                                </div>
                             </div>
                         </div>
                     </div>

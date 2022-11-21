@@ -19,7 +19,7 @@
     <header class="bg-white shadow">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="../home/home-login.php">
+                <a class="navbar-brand" href="../home/">
                     <img src="../assets/images/logo.png" alt="Logo" class="mw-100" draggable="false">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +32,19 @@
                                 <a class="nav-link" href="../home/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../listing/used-car-listing.php">Used Cars</a>
+                                <a class="nav-link" href="../used-car/used-car-listing.php">Used Cars</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../adopt/adopt-listing.php">Price Calculator</a>
+                                <a class="nav-link" href="../finance-calculator/">Price Calculator</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../purchase/purchase-pet.php">Auto Store</a>
+                                <a class="nav-link" href="../auto-parts/">Auto Store</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../listing/shelters.php">Contact Us</a>
+                                <a class="nav-link" href="../contact/">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link secondary-theme-button shadow mx-md-4" href="../donate/donate-form.php">Post An Ad</a>
+                                <a class="nav-link secondary-theme-button shadow mx-md-4" href="../ads/ad-post.php">Post An Ad</a>
                             </li>
                         </ul>
                         <!-- icon menu  -->
@@ -105,22 +105,22 @@
                     <div class="guest-menu-bar">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../home/home-login.php">Home</a>
+                                <a class="nav-link" href="../home/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript: void();" data-toggle="modal" data-target="#signIn">Used Cars</a>
+                                <a class="nav-link"  href="../used-car/used-car-listing.php">Used Cars</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../adopt/adopt-listing.php">Price Calculator</a>
+                                <a class="nav-link" href="javascript: void();" data-toggle="modal" data-target="#signIn">Price Calculator</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../purchase/purchase-pet.php">Auto Store</a>
+                                <a class="nav-link" href="../auto-parts/">Auto Store</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../listing/shelters.php">Contact Us</a>
+                                <a class="nav-link" href="../contact/">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link secondary-theme-button shadow mx-md-4" href="../donate/donate-form.php">Post An Ad</a>
+                                <a class="nav-link secondary-theme-button shadow mx-md-4" href="javascript: void();" data-toggle="modal" data-target="#signIn">Post An Ad</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav align-items-center">

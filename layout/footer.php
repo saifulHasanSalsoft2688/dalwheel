@@ -17,20 +17,14 @@
                         <h5 class="text-white" data-aos="fade-down" data-aos-duration="1200">Quick Links</h5>
                     </div>
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../home/">Home</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Other Links</a>
+                            <a class="nav-link" href="../about/">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../privacy-policy/">Privacy Policy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../terms-and-condition/">Terms & Conditions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contact/">Contact Us</a>
                         </li>
                     </ul>
                 </div>

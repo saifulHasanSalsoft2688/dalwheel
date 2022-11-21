@@ -14,189 +14,247 @@ include('../layout/loggedin-header.php');
         </div>
         <div class="row">
             <div class="col-lg-3">
-                <div class="filter-box shadow h-100 rounded-10">
-                    <div class="filter-feilds">
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="petCategory">
-                                    Pet Category
-                                </label>
-                                <select name="pet-category" id="petCategory" class="form-control rounded-pill">
-                                    <option value="">Select</option>
-                                    <option value="dog">Dog</option>
-                                    <option value="cat">Cat</option>
-                                </select>
+                <div class="filter-feilds border rounded">
+                    <div class="filter-label mt-0">
+                        <h5 class="mb-0">Refine Your Search</h5>
+                    </div>
+                    <div class="accordion" id="carFilter">
+                        <div class="card">
+                            <div class="card-header" id="searchFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
+                                        Search by keyword
+                                    </button>
+                                </h2>
                             </div>
-                            <div class="form-group">
-                                <label for="gender">
-                                    Gender
-                                </label>
-                                <select name="pet-category" id="gender" class="form-control rounded-pill">
-                                    <option value="">Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="breed">
-                                    Breed
-                                </label>
-                                <select name="pet-category" id="breed" class="form-control rounded-pill">
-                                    <option value="">Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="color">
-                                    Select Color
-                                </label>
-                                <select name="pet-category" id="color" class="form-control rounded-pill">
-                                    <option value="">Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </div>
-                            <!-- advance filter box  -->
-                            <div class="advance-filter-option" style="display: none;">
-                                <div class="filter-label border-top">
-                                    <h5 class="mb-0">Age & Group</h5>
-                                </div>
-                                <div class="form-group">
-                                    <label for="age">
-                                        Age
-                                    </label>
-                                    <select name="pet-category" id="age" class="form-control rounded-pill">
-                                        <option value="">Select</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="group">
-                                        Group
-                                    </label>
-                                    <select name="pet-category" id="group" class="form-control rounded-pill">
-                                        <option value="">Select</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                    </select>
-                                </div>
-                                <!-- Behaviour  -->
-                                <div class="filter-label border-top">
-                                    <h5 class="mb-0">Behaviour</h5>
-                                </div>
-                                <div class="form-group">
-                                    <label for="training" class="font-weight-bold">Temprament</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="protective" id="protective">
-                                        <label class="form-check-label" for="protective">
-                                            Protective
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="playful" id="playful">
-                                        <label class="form-check-label" for="playful">
-                                            Playful
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="affectionate" id="affectionate">
-                                        <label class="form-check-label" for="affectionate">
-                                            Affectionate
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="gentle" id="gentle">
-                                        <label class="form-check-label" for="gentle">
-                                            Gentle
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="training" class="font-weight-bold">Training</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="need" id="need">
-                                        <label class="form-check-label" for="need">
-                                            Needs Training
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="basic" id="basic">
-                                        <label class="form-check-label" for="basic">
-                                            Has Basic Training
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="trained" id="trained">
-                                        <label class="form-check-label" for="trained">
-                                            Well Trained
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- add type  -->
-                                <div class="border-top border-bottom py-3 my-4">
+                            <div id="search" class="collapse" aria-labelledby="searchFilter" data-parent="#carFilter" style="">
+                                <div class="card-body">
                                     <div class="form-group">
-                                        <label for="type">
-                                            Ad Type
-                                        </label>
-                                        <select name="pet-category" id="type" class="form-control rounded-pill">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="shelter">
-                                            Shelter
-                                        </label>
-                                        <select name="pet-category" id="shelter" class="form-control rounded-pill">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="country">
-                                            Country
-                                        </label>
-                                        <select name="pet-category" id="country" class="form-control rounded-pill">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="city">
-                                            City
-                                        </label>
-                                        <select name="pet-category" id="city" class="form-control rounded-pill">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="state">
-                                            State
-                                        </label>
-                                        <select name="pet-category" id="state" class="form-control rounded-pill">
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="distance" class="form-label d-flex justify-content-between align-items-center">
-                                            <span>Maximum Distance</span>
-                                            <span class="text-secondary">250 km</span>
-                                        </label>
-                                        <input type="range" class="form-range w-100" id="distance">
+                                        <div class="position-relative">
+                                            <input type="text" placeholder="Search Here...." class="form-control rounded" id="password">
+                                            <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="advanceFilter border-0 bg-white text-theme-primary" type="button"><i class="fa fa-plus-circle pr-2"></i>Advance Filter</button>
-                        </form>
+                        </div>
+
+                        <!-- city  -->
+
+                        <div class="card">
+                            <div class="card-header" id="searchCity">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#city" aria-expanded="false" aria-controls="city">
+                                        City
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="city" class="collapse" aria-labelledby="searchCity" data-parent="#carFilter">
+                                <div class="card-body">
+                                    <div class="position-relative mb-2">
+                                        <input type="text" placeholder="Search Here...." class="form-control rounded">
+                                        <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <div class="ctiy-option my-2">
+                                        <div class="form-group">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="New York" id="newYork">
+                                                <label class="form-check-label" for="newYork">
+                                                    New York
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Chicago" id="chicago">
+                                                <label class="form-check-label" for="chicago">
+                                                    Chicago
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Los Angeles" id="losAngeles">
+                                                <label class="form-check-label" for="losAngeles">
+                                                    Los Angeles
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="San Diego" id="sanDiego">
+                                                <label class="form-check-label" for="sanDiego">
+                                                    San Diego
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Boston" id="boston">
+                                                <label class="form-check-label" for="boston">
+                                                    Boston
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Austin" id="austin">
+                                                <label class="form-check-label" for="austin">
+                                                    Austin
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Make  -->
+
+                        <div class="card">
+                            <div class="card-header" id="searchMake">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#make" aria-expanded="false" aria-controls="make">
+                                        Make
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="make" class="collapse" aria-labelledby="searchMake" data-parent="#carFilter">
+                                <div class="card-body">
+                                    <div class="position-relative mb-2">
+                                        <input type="text" placeholder="Search Here...." class="form-control rounded">
+                                        <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <div class="ctiy-option my-2">
+                                        <div class="form-group">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Honda" id="honda">
+                                                <label class="form-check-label" for="honda">
+                                                    Honda
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Toyota" id="toyota">
+                                                <label class="form-check-label" for="toyota">
+                                                    Toyota
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="KIA" id="kia">
+                                                <label class="form-check-label" for="kia">
+                                                    KIA
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Changan" id="changan">
+                                                <label class="form-check-label" for="changan">
+                                                    Changan
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Hyundai" id="hyundai">
+                                                <label class="form-check-label" for="hyundai">
+                                                    Hyundai
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range  -->
+                        <div class="card">
+                            <div class="card-header" id="priceFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#price" aria-expanded="false" aria-controls="price">
+                                        Price Range
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="price" class="collapse" aria-labelledby="priceFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-5">
+                                    <div class="form-group">
+                                        <div class="range-slider">
+                                            <span class="output outputOne" style="left: 42%;">$42</span>
+                                            <span class="output outputTwo" style="left: 62%;">$62</span>
+                                            <span class="full-range"></span>
+                                            <span class="incl-range" style="width: 20%; left: 42%;"></span>
+                                            <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                                            <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Year  -->
+                        <div class="card">
+                            <div class="card-header" id="yearFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#year" aria-expanded="false" aria-controls="price">
+                                        Year
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="year" class="collapse" aria-labelledby="yearFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-5">
+                                    <div class="form-group">
+                                        <div class="range-slider">
+                                            <span class="output outputOne" style="left: 42%;">$42</span>
+                                            <span class="output outputTwo" style="left: 62%;">$62</span>
+                                            <span class="full-range"></span>
+                                            <span class="incl-range" style="width: 20%; left: 42%;"></span>
+                                            <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                                            <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mileage  -->
+                        <div class="card">
+                            <div class="card-header" id="mileAgeFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#mileage" aria-expanded="false" aria-controls="mileage">
+                                        Mileage(Km)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="mileage" class="collapse" aria-labelledby="mileAgeFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-5">
+                                    <div class="form-group">
+                                        <div class="range-slider">
+                                            <span class="output outputOne" style="left: 42%;">$42</span>
+                                            <span class="output outputTwo" style="left: 62%;">$62</span>
+                                            <span class="full-range"></span>
+                                            <span class="incl-range" style="width: 20%; left: 42%;"></span>
+                                            <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                                            <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transmission  -->
+                        <div class="card">
+                            <div class="card-header" id="transmissionFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#transmission" aria-expanded="false" aria-controls="transmission">
+                                        Transmission
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="transmission" class="collapse" aria-labelledby="transmissionFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-5">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="trans" id="automatic" value="automatic">
+                                            <label class="form-check-label" for="automatic">Automatic</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="trans" id="manual" value="manual">
+                                            <label class="form-check-label" for="manual">Manual</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,7 +447,7 @@ include('../layout/loggedin-header.php');
             </div>
         </div>
     </div>
-</section> 
+</section>
 <?php
 include('../layout/footer.php');
 ?>
