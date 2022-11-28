@@ -2,7 +2,7 @@
 include('../layout/loggedin-header.php');
 ?>
 
-<section class="car-listing-page py-3">
+<section class="car-listing-page py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -165,7 +165,7 @@ include('../layout/loggedin-header.php');
                                 </h2>
                             </div>
                             <div id="price" class="collapse" aria-labelledby="priceFilter" data-parent="#carFilter" style="">
-                                <div class="card-body pt-0 pb-5">
+                                <div class="card-body pt-0 pb-4">
                                     <div class="form-group">
                                         <div class="range-slider">
                                             <span class="output outputOne" style="left: 42%;">$42</span>
@@ -191,7 +191,7 @@ include('../layout/loggedin-header.php');
                                 </h2>
                             </div>
                             <div id="year" class="collapse" aria-labelledby="yearFilter" data-parent="#carFilter" style="">
-                                <div class="card-body pt-0 pb-5">
+                                <div class="card-body pt-0 pb-4">
                                     <div class="form-group">
                                         <div class="range-slider">
                                             <span class="output outputOne" style="left: 42%;">$42</span>
@@ -216,7 +216,7 @@ include('../layout/loggedin-header.php');
                                 </h2>
                             </div>
                             <div id="mileage" class="collapse" aria-labelledby="mileAgeFilter" data-parent="#carFilter" style="">
-                                <div class="card-body pt-0 pb-5">
+                                <div class="card-body pt-0 pb-4">
                                     <div class="form-group">
                                         <div class="range-slider">
                                             <span class="output outputOne" style="left: 42%;">$42</span>
@@ -241,7 +241,7 @@ include('../layout/loggedin-header.php');
                                 </h2>
                             </div>
                             <div id="transmission" class="collapse" aria-labelledby="transmissionFilter" data-parent="#carFilter" style="">
-                                <div class="card-body pt-0 pb-5">
+                                <div class="card-body pt-0 pb-2">
                                     <div class="d-flex justify-content-between flex-wrap">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="trans" id="automatic" value="automatic">
@@ -255,11 +255,155 @@ include('../layout/loggedin-header.php');
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Color  -->
+                        <div class="card">
+                            <div class="card-header" id="colorFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#color" aria-expanded="false" aria-controls="color">
+                                        Color
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="color" class="collapse" aria-labelledby="colorFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0">
+                                    <div class="form-group d-flex flex-wrap gap-15">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="white" id="white">
+                                            <label class="form-check-label" for="white">
+                                                White
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="black" id="black">
+                                            <label class="form-check-label" for="black">
+                                                Black
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="silver" id="silver">
+                                            <label class="form-check-label" for="silver">
+                                                Silver
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="grey" id="grey">
+                                            <label class="form-check-label" for="grey">
+                                                Grey
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Energy Type  -->
+                        <div class="card">
+                            <div class="card-header" id="typeFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#energy" aria-expanded="false" aria-controls="energy">
+                                        Energy Type
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="energy" class="collapse" aria-labelledby="typeFilter" data-parent="#typeFilter" style="">
+                                <div class="card-body pt-0 pb-2">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type" id="petrol" value="petrol">
+                                            <label class="form-check-label" for="petrol">Petrol</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type" id="diesel" value="diesel">
+                                            <label class="form-check-label" for="diesel">Diesel</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type" id="hybrid" value="hybrid">
+                                            <label class="form-check-label" for="hybrid">Hybrid</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Energy Capacity  -->
+                        <div class="card">
+                            <div class="card-header" id="capacityFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#capacity" aria-expanded="false" aria-controls="capacity">
+                                        Energy Capacity
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="capacity" class="collapse" aria-labelledby="capacityFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-4">
+                                    <div class="form-group">
+                                        <div class="range-slider">
+                                            <span class="output outputOne" style="left: 30%;">1600cc</span>
+                                            <span class="output outputTwo" style="left: 80%;">2000cc</span>
+                                            <span class="full-range"></span>
+                                            <span class="incl-range" style="width: 20%; left: 42%;"></span>
+                                            <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                                            <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Picture Availability  -->
+                        <div class="card">
+                            <div class="card-header" id="pictureFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#picture" aria-expanded="false" aria-controls="picture">
+                                        Picture Availability
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="picture" class="collapse" aria-labelledby="pictureFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0 pb-2">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="picture" id="wpic" value="wpic">
+                                            <label class="form-check-label" for="wpic">With Picture</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="picture" id="notpic" value="notpic">
+                                            <label class="form-check-label" for="notpic">Without picture</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ad type  -->
+                        <div class="card border-bottom-0">
+                            <div class="card-header" id="adFilter">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#ad" aria-expanded="false" aria-controls="ad">
+                                        Ad Type
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="ad" class="collapse" aria-labelledby="adFilter" data-parent="#carFilter" style="">
+                                <div class="card-body pt-0">
+                                    <div class="form-group d-flex flex-wrap gap-15">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="featured" id="featured">
+                                            <label class="form-check-label" for="featured">
+                                                Featured
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="seachedFilter shadow  my-3">
+                <div class="seachedFilter shadow mb-3">
                     <div class="d-flex flex-wrap align-items-center justify-content-between">
                         <div class="form-group d-flex align-items-center justify-content-end gap-15 mb-0">
                             <label for="petCategory" class="flex-shrink-0 mb-md-0">

@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="sell-your-car py-3">
+<section class="sell-your-car py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

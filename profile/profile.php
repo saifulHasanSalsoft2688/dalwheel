@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="donate-form p-70">
+<section class="donate-form py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-10 m-auto">

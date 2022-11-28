@@ -6,10 +6,8 @@ include('../layout/loggedin-header.php');
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="breadcurm">
-                    <p><a href="#" class="text-dark">Home</a> > User Car > <a href="#" class="text-theme-primary">Car Care</a></p>
-                </div>
                 <div class="listing-title mb-3">
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> User Car <i class="fa fa-chevron-right"></i> <span class="text-danger">Car Care</span> </h5>
                     <h3 class="font-weight-bold">Auto Parts</h3>
                 </div>
             </div>

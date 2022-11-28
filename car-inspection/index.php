@@ -4,7 +4,7 @@ include('../layout/loggedin-header.php');
 <section class="ad-post py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 m-auto">
+            <div class="col-md-12 m-auto">
                 <div class="ad-post-area">
                     <div class="listing-title mb-3">
                         <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="text-danger">Car Inspection</span> </h5>

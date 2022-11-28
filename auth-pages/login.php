@@ -9,7 +9,7 @@ include('../layout/header.php');
                     <div class="right-side">
                         <div class="formWrap">
                             <!-- Form  Start -->
-                            <form action="../home/home-login.php">
+                            <form action="../home/">
                                 <div class="logo_wrapper">
                                     <img src="../assets/images/logo.png" class="img-fluid" alt="Logo">
                                 </div>

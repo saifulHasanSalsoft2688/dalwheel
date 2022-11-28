@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="inspection-report">
+<section class="inspection-report py-4">
     <div class="container">
         <div class="box my-4">
             <div class="row">

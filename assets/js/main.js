@@ -135,14 +135,14 @@ jQuery(".regular").slick({
   autoplay: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       }
     },
     {
-      breakpoint: 540,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -190,7 +190,7 @@ jQuery(".banners").slick({
   infinite: true,
   slidesToShow: 1,
   vertical: true,
-  autoplay: true,
+  autoplay: false,
   speed: 2000,
   autoplaySpeed: 4000,
   cssEase: 'ease-in-out',

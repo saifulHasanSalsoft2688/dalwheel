@@ -1,7 +1,7 @@
 <?php
 include('../layout/loggedin-header.php');
 ?>
-<section class="contact-seller py-4">
+<section class="contact-seller py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

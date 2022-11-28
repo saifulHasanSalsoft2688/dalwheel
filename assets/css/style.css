@@ -81,7 +81,7 @@ body {
     color: #fff;
     position: absolute;
     transform: rotate(-90deg);
-    right: -190px;
+    right: -230px;
     z-index: 999;
     overflow: hidden;
 }
@@ -121,7 +121,7 @@ body {
 .banners .slick-arrow {
     position: absolute;
     z-index: 9999;
-    bottom: 120px;
+    bottom: 30px;
     width: 140px;
     background-color: transparent;
     border: none;
@@ -447,7 +447,7 @@ section.used-car .row {
 }
 
 .sell-car-slides button.slick-prev.slick-arrow:before {
-    content: '\f053';
+    content: '\f053' !important;
     font-family: 'FontAwesome';
     position: relative;
     right: 10px;
@@ -463,6 +463,25 @@ section.used-car .row {
 
 .p-70 {
     padding: 70px 0;
+}
+
+
+div#carFilter button[aria-expanded="false"]::after {
+    content: '\f067';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+div#carFilter button[aria-expanded="true"]::after {
+    content: '\f068';
+     font-family: 'FontAwesome';
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
 
 
@@ -494,6 +513,10 @@ section.used-car .row {
     padding: 10px 0px;
 }
 
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--text-primary-theme);
+}
 
 .whislList button {
     width: 40px;
@@ -2109,7 +2132,7 @@ form a {
     flex-direction: row;
 }
 
-.listing-title h5 {
+.listing-title h5, .form-head h5 {
     font-size: 15px;
 }
 
@@ -2656,6 +2679,14 @@ form a {
     display: block;
 }
 
+.default .navbar-brand > img {
+    width: 7rem !important;
+}
+
+
+body {
+    font-size: .9rem !important;
+}
 
 @media(max-width: 799px) {
     .mainBanner {
@@ -2691,7 +2722,7 @@ form a {
     }
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1400px) {
     .slide-heading h3 {
         font-size: 75px;
     }
@@ -2724,6 +2755,24 @@ form a {
         height: 200px;
     }
 
+    .slide-heading {
+        right: -196px;
+    }
+
+}
+
+@media(max-width: 1170px) {
+    .slide-heading {
+        right: -160px;
+    }
+
+    .slide-heading h3 {
+        font-size: 60px;
+    }
+
+    .previous-image {
+        margin-top: 6pc;
+    }
 }
 
 @media(max-width: 991px) {

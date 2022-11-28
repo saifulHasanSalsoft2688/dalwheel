@@ -8,7 +8,7 @@ include('../layout/header.php');
                 <div class="col-md-3 px-0">
                     <div class="left-slide-content position-relative">
                         <div class="row">
-                            <div class="col-md-7">
+                            <div class="col-md-10 col-xl-7">
                                 <div class="previous-image">
                                     <img src="" alt="" draggable="false" class="mw-100">
                                 </div>
@@ -37,7 +37,7 @@ include('../layout/header.php');
                 <div class="col-md-3 px-0">
                     <div class="left-slide-content position-relative">
                         <div class="row">
-                            <div class="col-md-10 col-lg-7">
+                            <div class="col-md-10 col-xl-7">
                                 <div class="previous-image">
                                     <img src="" alt="" draggable="false" class="mw-100">
                                 </div>
@@ -66,7 +66,7 @@ include('../layout/header.php');
                 <div class="col-md-3 px-0">
                     <div class="left-slide-content position-relative">
                         <div class="row">
-                            <div class="col-md-10 col-lg-7">
+                            <div class="col-md-10 col-xl-7">
                                 <div class="previous-image">
                                     <img src="" alt="" draggable="false" class="mw-100">
                                 </div>
@@ -125,7 +125,7 @@ include('../layout/header.php');
                                 <li>Post Your Ad For Free In Few Easy Steps</li>
                                 <li>Sell Your Car Fast At The Best Price</li>
                             </ul>
-                            <p class="mb-0"><a href="#" class="secondary-theme-button nav-link d-inline-block">Post An Ad</a></p>
+                            <p class="mb-0"><a href="../ads/ad-post.php" class="secondary-theme-button nav-link d-inline-block">Post An Ad</a></p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -176,7 +176,7 @@ include('../layout/header.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-7" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-md-10 col-xl-7" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div class="interior-content">
                             <p class="text-theme-primary text-uppercase">Our Company</p>
                             <p class="mb-0">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Fermentum Urna Quam, Non Maximus Augue Vulputate Ac. Vivamus Scelerisque Nulla Ut Ante Aliquet Tristique. Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Fermentum Urna Quam, Non Maximus Augue Vulputate Ac. Vivamus Scelerisque Nulla Ut Ante Aliquet Tristique. </p>
@@ -204,7 +204,7 @@ include('../layout/header.php');
             <div class="col-md-4">
                 <div class="avtive-featured-car" data-aos="fade-up" data-aos-duration="1000">
                     <div class="car-detail">
-                        <div class="d-flex justify-content-between flex-wrap">
+                        <div class="d-flex justify-content-between">
                             <div class="car-name">
                                 <h3>Suzuki Swift DLX <span class="f-14">(Toyota)</span></h3>
                                 <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -255,7 +255,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-1.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>Suzuki Swift DLX <span class="f-14">(Toyota)</span></h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -278,7 +278,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-2.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>SUV Car</h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -301,7 +301,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-3.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>Sedan Car</h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -324,7 +324,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-1.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>Suzuki Swift DLX <span class="f-14">(Toyota)</span></h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -347,7 +347,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-2.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>SUV Car</h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -370,7 +370,7 @@ include('../layout/header.php');
                                 <img src="../assets/images/car-3.png" alt="Car 1" draggable="false">
                             </div>
                             <div class="car-detail">
-                                <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex justify-content-between">
                                     <div class="car-name">
                                         <h3>Sedan Car</h3>
                                         <h6><i class="fa fa-map-marker text-theme-primary"></i> 5817 Washington, USA</h6>
@@ -421,7 +421,7 @@ include('../layout/header.php');
                         </figure>
                     </div>
                     <div class="product-listing-footer px-2">
-                        <div class="d-flex justify-content-between flex-wrap flex-nowrap">
+                        <div class="d-flex justify-content-between">
                             <div class="product-name">
                                 <p class="mb-0 font-weight-bold">Headlights</p>
                                 <p class="mb-0 f-14"><i>Car Care | Car Top Covers</i></p>
@@ -451,7 +451,7 @@ include('../layout/header.php');
                         </figure>
                     </div>
                     <div class="product-listing-footer px-2">
-                        <div class="d-flex justify-content-between flex-wrap flex-nowrap">
+                        <div class="d-flex justify-content-between">
                             <div class="product-name">
                                 <p class="mb-0 font-weight-bold">Headlights</p>
                                 <p class="mb-0 f-14"><i>Car Care | Car Top Covers</i></p>
@@ -481,7 +481,7 @@ include('../layout/header.php');
                         </figure>
                     </div>
                     <div class="product-listing-footer px-2">
-                        <div class="d-flex justify-content-between flex-wrap flex-nowrap">
+                        <div class="d-flex justify-content-between">
                             <div class="product-name">
                                 <p class="mb-0 font-weight-bold">Headlights</p>
                                 <p class="mb-0 f-14"><i>Car Care | Car Top Covers</i></p>
@@ -511,7 +511,7 @@ include('../layout/header.php');
                         </figure>
                     </div>
                     <div class="product-listing-footer px-2">
-                        <div class="d-flex justify-content-between flex-wrap flex-nowrap">
+                        <div class="d-flex justify-content-between">
                             <div class="product-name">
                                 <p class="mb-0 font-weight-bold">Headlights</p>
                                 <p class="mb-0 f-14"><i>Car Care | Car Top Covers</i></p>
@@ -525,7 +525,7 @@ include('../layout/header.php');
             </div>
             <div class="col-md-12 mt-4">
                 <div class="link-to text-center" data-aos="fade-down" data-aos-duration="1200">
-                    <p class="mb-0"><a href="#">Post An Ad</a></p>
+                    <p class="mb-0"><a href="../ads/ad-post.php">Post An Ad</a></p>
                 </div>
             </div>
         </div>
@@ -566,7 +566,7 @@ include('../layout/header.php');
             </div>
             <div class="col-md-12 mt-4">
                 <div class="link-to text-center" data-aos="fade-down" data-aos-duration="1200">
-                    <p class="mb-0"><a href="#">Start Comparison</a></p>
+                    <p class="mb-0"><a href="../used-car/comparison.php">Start Comparison</a></p>
                 </div>
             </div>
         </div>
