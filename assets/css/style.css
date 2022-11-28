@@ -2706,6 +2706,92 @@ body {
         vertical-align: middle;
         white-space: nowrap;
     }
+
+    .previous-image {
+        display: none;
+    }
+    .default::after {
+        display: none;
+    }
+
+    .slides > .row > div:first-child {
+        order: 2;
+    }
+    
+    .slides > .row > div:last-child {
+        order: 1;
+    }
+
+    .default .navbar-brand > img {
+        width: 4rem !important;
+    }
+
+    .default .navbar-toggler {
+        color: #fff;
+        opacity: 1;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .banners .slick-dots {
+        align-items: start;
+        top: -45px;
+        right: unset;
+        left: 0;
+    }
+
+    .slide-image {
+        height: 400px !important;
+    }
+
+    .slide-heading {
+        right: -100px !important;
+        top: unset;
+        bottom: 16pc;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .default div#navbarNav > div {
+        background-color: #000000b0;
+        padding: 10px;
+    }
+
+    .logo-section, .counter {
+        text-align: center;
+    }
+
+    .sell-your-car .row > div, .used-car .row > div {
+        margin-bottom: 30px;
+    }
+
+    .sell-car-slides button.slick-prev {
+        right: 20%;
+    }
+
+    .title-box h1 {
+        font-size: 25px !important;
+    }
+    
+    .title-box h1 span {
+        display: block;
+    }
+
+    .login-menu-bar, .guest-menu-bar {
+        align-items: self-end;
+        gap: 20px;
+    }
+
+    .guest-menu-bar > ul:last-child, .login-menu-bar > ul:last-child{
+        flex-direction: row;
+        gap: 9px;
+    }
+
+    .row:not(.banners .row) > div {
+        margin-bottom: 25px;
+    }
 }
 
 @media(min-width: 1333px) {

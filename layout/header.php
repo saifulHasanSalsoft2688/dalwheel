@@ -25,7 +25,7 @@
                     <img src="../assets/images/logo.png" alt="Logo" class="mw-100" draggable="false">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
                     <div class="login-menu-bar" style="display: none;">
