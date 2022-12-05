@@ -6,8 +6,8 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-12 mb-4">
                 <div class="form-head">
-                    <h5 class="">Home <i class="fa fa-chevron-right"></i> Car Inspection <i class="fa fa-chevron-right"></i> Car Mechanics <i class="fa fa-chevron-right"></i> <span class="text-theme-primary"> Payment </span> </h5>
-                    <h3 class="font-weight-bold">Payment Information</h3>
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="text-theme-primary"> Financing Calculator   </span> </h5>
+                    <h3 class="font-weight-bold">Financing Calculator</h3>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@ include('../layout/loggedin-header.php');
                                 <div class="col-md-12 mb-3">
                                     <div class="form-group">
                                         <label for="installments">
-                                            Enter Number of Installments <span class="required">*</span>
+                                             Number of Installments <span class="required">*</span>
                                         </label>
                                         <input type="number" placeholder="Enter Number of Installments (eg. 12, 24 or 36)" class="form-control shadow border-0" id="installments">
                                     </div>
@@ -59,7 +59,7 @@ include('../layout/loggedin-header.php');
             <div class="col-md-12 my-3">
                 <div class="d-flex justify-content-between align-items-center flex-wrap shadow p-md-4 p-3 rounded-0">
                     <div class="table-data flex-grow-1">
-                        <p class="font-weight-bold mb-2">What is Featured Ad?</p>
+                        <p class="font-weight-bold mb-2">Car Price</p>
                         <p class="f-14 mb-0 text-secondary">$ 10,000</p>
                     </div>
                     <div class="table-data flex-grow-1">

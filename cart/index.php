@@ -17,7 +17,8 @@ include('../layout/loggedin-header.php');
                     <table class="table">
                         <thead class="bg-black text-white">
                             <tr>
-                                <th scope="col">Products</th>
+                                <th scope="col">S.No</th>
+                                <th scope="col">Product</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Total</th>
                                 <th></th>
@@ -25,6 +26,7 @@ include('../layout/loggedin-header.php');
                         </thead>
                         <tbody>
                             <tr>
+                                <td>01</td>
                                 <td>
                                     <div class="product-info">
                                         <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
@@ -65,6 +67,7 @@ include('../layout/loggedin-header.php');
                                 </td>
                             </tr>
                             <tr>
+                                <td>02</td>
                                 <td>
                                     <div class="product-info">
                                         <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
@@ -105,6 +108,7 @@ include('../layout/loggedin-header.php');
                                 </td>
                             </tr>
                             <tr>
+                                <td>03</td>
                                 <td>
                                     <div class="product-info">
                                         <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
@@ -145,6 +149,7 @@ include('../layout/loggedin-header.php');
                                 </td>
                             </tr>
                             <tr>
+                                <td>04</td>
                                 <td>
                                     <div class="product-info">
                                         <div class="d-flex gap-15 flex-wrap flex-md-nowrap align-items-center">
@@ -202,6 +207,14 @@ include('../layout/loggedin-header.php');
                                     </div>
                                     <div class="rightCartContent">
                                         <p class="mb-0">$100.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">
+                                    <div class="leftContent">
+                                        <p class="mb-0">Tax 0%</p>
+                                    </div>
+                                    <div class="rightCartContent">
+                                        <p class="mb-0">$5.00</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between flex-md-mowrap flex-wrap mb-4">

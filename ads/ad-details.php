@@ -539,7 +539,7 @@ include('../layout/loggedin-header.php');
                 </div>
 
                 <!-- review box  -->
-                <div class="review-area loginPopup">
+                <!-- <div class="review-area loginPopup">
                     <div class="pop-up-content shadow mb-3 py-2">
                         <div class="rating">
                             <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
@@ -555,7 +555,7 @@ include('../layout/loggedin-header.php');
                     <div class="sendbtn">
                         <button class="btn-grey-color">Send</button>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-3">
                 <div class="right-sidebar">
@@ -566,7 +566,7 @@ include('../layout/loggedin-header.php');
                         </div>
                     </div>
                     <div class="cta">
-                        <a href="#" class="btn-theme-solid mb-3">Feature This Ad</a>
+                        <a href="../featuredAd/" class="btn-theme-solid mb-3">Feature This Ad</a>
                     </div>
                 </div>
             </div>

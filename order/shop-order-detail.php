@@ -8,7 +8,7 @@ include('../layout/loggedin-header.php');
             <div class="col-md-9">
                 <div class="listing-title mb-4">
                     <h5 class="">Home <i class="fa fa-chevron-right"></i> My Orders <i class="fa fa-chevron-right"></i> <span class="text-theme-primary">Order Details</span> </h5>
-                    <h3 class="font-weight-bold">My Orders</h3>
+                    <h3 class="font-weight-bold">Order Details</h3>
                 </div>
                 <div class="row align-items-end">
                     <div class="col-md-3 mb-3 mb-md-0">
@@ -34,7 +34,7 @@ include('../layout/loggedin-header.php');
                         <table class="table">
                             <thead class="bg-black text-white">
                                 <tr>
-                                    <th scope="col">Products</th>
+                                    <th scope="col">Product</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Total</th>
                                     <th></th>

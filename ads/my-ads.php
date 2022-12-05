@@ -45,7 +45,7 @@ include('../layout/loggedin-header.php');
                                 <th scope="col">Car Name</th>
                                 <th scope="col">Car Category</th>
                                 <th>Date</th>
-                                <th scope="col">Order Status</th>
+                                <th scope="col">Status</th>
                                 <th>Test Drive Request</th>
                                 <th scope="col">Actions</th>
                             </tr>
@@ -58,7 +58,7 @@ include('../layout/loggedin-header.php');
                                 <td>SUV</td>
                                 <td>mm/dd/yyyy</td>
                                 <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
+                                <td><a href="javascript: void();" class="text-dark">View</a></td>
                                 <td>
                                     <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
@@ -70,7 +70,7 @@ include('../layout/loggedin-header.php');
                                 <td>SUV</td>
                                 <td>mm/dd/yyyy</td>
                                 <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
+                                <td><a href="javascript: void();" class="text-dark">View</a></td>
                                 <td>
                                     <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
@@ -82,19 +82,7 @@ include('../layout/loggedin-header.php');
                                 <td>SUV</td>
                                 <td>mm/dd/yyyy</td>
                                 <td><span class="status text-requested">Rejected</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
-                                <td>
-                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>01</th>
-                                <td>001</td>
-                                <td>Prius</td>
-                                <td>SUV</td>
-                                <td>mm/dd/yyyy</td>
-                                <td><span class="status text-pending">Pending</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
+                                <td><a href="javascript: void();" class="text-dark">View</a></td>
                                 <td>
                                     <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>
@@ -106,7 +94,19 @@ include('../layout/loggedin-header.php');
                                 <td>SUV</td>
                                 <td>mm/dd/yyyy</td>
                                 <td><span class="status text-deliver">Approved</span></td>
-                                <td><a href="#" class="text-dark">View</a></td>
+                                <td><a href="#" class="text-theme-primary">View</a></td>
+                                <td>
+                                    <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>01</th>
+                                <td>001</td>
+                                <td>Prius</td>
+                                <td>SUV</td>
+                                <td>mm/dd/yyyy</td>
+                                <td><span class="status text-deliver">Approved</span></td>
+                                <td><a href="#" class="text-theme-primary">View</a></td>
                                 <td>
                                     <p class="mb-0"><a class="text-secondary" href="./ad-details.php"><i class="fa fa-eye pr-2"></i></a></p>
                                 </td>

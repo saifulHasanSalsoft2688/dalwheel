@@ -6,7 +6,7 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-10 m-auto">
                 <div class="listing-title mb-3">
-                    <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="text-danger">Edit Profile</span> </h5>
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> My Profile <i class="fa fa-chevron-right"></i> <span class="text-danger">Edit Profile</span> </h5>
                     <h3 class="font-weight-bold">Edit Profile</h3>
                 </div>
                 <div class="form-area shadow p-md-5 p-3 text-left rounded-0">
@@ -50,7 +50,7 @@ include('../layout/loggedin-header.php');
                                         <label for="phone">
                                             Phone Number <span class="required">*</span>
                                         </label>
-                                        <input type="number" name="phone" class="form-control shadow" required placeholder="Enter Phone Number">
+                                        <input type="number" name="phone" class="form-control shadow phone" required placeholder="Enter Phone Number">
                                     </div>
                                 </div>
                             </div>

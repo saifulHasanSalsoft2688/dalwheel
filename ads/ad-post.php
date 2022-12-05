@@ -52,8 +52,8 @@ include('../layout/loggedin-header.php');
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="petCategory">
-                                            City
+                                        <label for="city">
+                                            City <span class="required">*</span>
                                         </label>
                                         <select name="city" id="city" class="form-control shadow border-0">
                                             <option value="">City</option>
@@ -86,14 +86,6 @@ include('../layout/loggedin-header.php');
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="mileage">
-                                            Mileage (KM) <span class="required">*</span>
-                                        </label>
-                                        <input type="number" placeholder="Enter Milage" class="form-control shadow border-0" id="mileage">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
                                         <label for="description">
                                             Ad Description <span class="required">*</span>
                                         </label>
@@ -103,7 +95,7 @@ include('../layout/loggedin-header.php');
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="catehory">
-                                            Car Category
+                                            Car Category <span class="required">*</span>
                                         </label>
                                         <select name="city" id="city" class="form-control shadow border-0">
                                             <option value="">SUV</option>
@@ -401,10 +393,10 @@ include('../layout/loggedin-header.php');
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="form-group">
-                                        <label for="number1">
+                                        <label for="phone">
                                             Mobile Number 1 <span class="required">*</span>
                                         </label>
-                                        <input type="number" placeholder="Enter Mobile Number" class="form-control shadow border-0" id="number1">
+                                        <input placeholder="Enter Mobile Number" class="form-control shadow border-0 phone" name="phone" type="tel">
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
@@ -412,7 +404,7 @@ include('../layout/loggedin-header.php');
                                         <label for="num2">
                                             Mobile Number 2 <span class="required">*</span>
                                         </label>
-                                        <input type="number" placeholder="Enter Mobile Number" class="form-control shadow border-0" id="num2">
+                                        <input type="number" placeholder="Enter Mobile Number" class="form-control shadow border-0 phone" id="num2">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -428,5 +420,5 @@ include('../layout/loggedin-header.php');
 </section>
 
 <?php
-include('../layout/auth-footer.php');
+include('../layout/footer.php');
 ?>

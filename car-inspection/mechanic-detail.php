@@ -83,7 +83,7 @@ include('../layout/loggedin-header.php');
                 <div class="car-features-list my-4">
                     <div class="row my-3">
                         <div class="col-12">
-                            <h4 class="font-weight-bold">Descriptions</h4>
+                            <h4 class="font-weight-bold">Description</h4>
                             <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum
                                 Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown
                                 Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. Lorem Ipsum

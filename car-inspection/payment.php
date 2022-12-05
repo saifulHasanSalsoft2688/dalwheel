@@ -20,9 +20,9 @@ include('../layout/loggedin-header.php');
                                 <div class="col-md-12 mb-3">
                                     <div class="form-group">
                                         <label for="name">
-                                            Car Holder Name <span class="required">*</span>
+                                            Card Holder Name <span class="required">*</span>
                                         </label>
-                                        <input type="text" placeholder="Enter Car Holder Name" class="form-control shadow border-0" id="name">
+                                        <input type="text" placeholder="Enter Card Holder Name" class="form-control shadow border-0" id="name">
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-3">
@@ -38,7 +38,7 @@ include('../layout/loggedin-header.php');
                                         <label for="cvv">
                                             CVV Number <span class="required">*</span>
                                         </label>
-                                        <input type="number" placeholder="Enter CVV" class="form-control shadow border-0" id="cvv">
+                                        <input type="number" placeholder="Enter CVV Number" class="form-control shadow border-0" id="cvv">
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-3">

@@ -16,17 +16,24 @@ include('../layout/loggedin-header.php');
             <div class="col-md-12">
                 <div class="seachedFilter border-0 bg-transparent">
                     <div class="row justify-content-between mb-3">
-                        <div class="col-md-6">
-                            <div class="form-group d-flex align-items-center gap-15 mb-0 flex-wrap">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center gap-15 mb-0 flex-wrap entries">
                                 <label class="flex-shrink-0 mb-md-0">
                                     Show
                                 </label>
-                                <input type="number" class="form-control w-25 flex-shrink-0">
+                                <input type="number" class="form-control w-25 flex-shrink-0" placeholder="01" min="0">
                                 <p class="mb-0">Entries</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
+                        <div class="col-md-6">
+                            <div class="form-group d-flex align-items-center gap-15 mb-0 flex-wrap justify-content-md-end mb-3">
+                                <label class="flex-shrink-0 mb-md-0">
+                                    Sort by
+                                </label>
+                                <input type="date" class="form-control serachFiled flex-shrink-0">
+                                <input type="date" class="form-control serachFiled flex-shrink-0">
+                            </div>
+                            <div class="form-group d-flex justify-content-md-end">
                                 <div class="position-relative">
                                     <input type="text" placeholder="Search Here...." class="form-control" id="password">
                                     <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
@@ -41,10 +48,10 @@ include('../layout/loggedin-header.php');
                             <tr>
                                 <th scope="col">S.No</th>
                                 <th scope="col">Order ID</th>
-                                <th scope="col">Order Date On</th>
-                                <th scope="col">Order Paid</th>
+                                <th scope="col">Order Date</th>
+                                <th scope="col">Amount Paid</th>
                                 <th scope="col">Order Status</th>
-                                <th scope="col">Actions</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>

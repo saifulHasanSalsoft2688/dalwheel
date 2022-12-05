@@ -431,6 +431,7 @@ include('../layout/header.php');
                             </div>
                         </div>
                     </div>
+                    <a href="../auto-parts/auto-store-detail.php" class="link-box"></a>
                 </div>
             </div>
             <div class="col-md-3 mb-3">
@@ -461,6 +462,7 @@ include('../layout/header.php');
                             </div>
                         </div>
                     </div>
+                    <a href="../auto-parts/auto-store-detail.php" class="link-box"></a>
                 </div>
             </div>
             <div class="col-md-3 mb-3">
@@ -491,6 +493,7 @@ include('../layout/header.php');
                             </div>
                         </div>
                     </div>
+                    <a href="../auto-parts/auto-store-detail.php" class="link-box"></a>
                 </div>
             </div>
             <div class="col-md-3 mb-3">
@@ -521,11 +524,12 @@ include('../layout/header.php');
                             </div>
                         </div>
                     </div>
+                    <a href="../auto-parts/auto-store-detail.php" class="link-box"></a>
                 </div>
             </div>
             <div class="col-md-12 mt-4">
                 <div class="link-to text-center" data-aos="fade-down" data-aos-duration="1200">
-                    <p class="mb-0"><a href="../ads/ad-post.php">Post An Ad</a></p>
+                    <p class="mb-0"><a href="../auto-parts/top-cover.php">View All</a></p>
                 </div>
             </div>
         </div>

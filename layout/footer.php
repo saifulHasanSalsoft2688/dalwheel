@@ -9,6 +9,10 @@
                 </div>
                 <div class="footer-content">
                     <p class="mb-0 text-white f-14">We Provide Everything You Need To Build An Amazing Dealership Website Developed Especially For Car Sellers Dealers Or Auto Motor Retailers</p>
+                    <ul class="mt-3">
+                        <li><a class="text-white" href="tel: +123-456-7890"><i class="pr-2 text-theme-primary fa fa-phone"></i> +123-456-7890</a></li>
+                        <li><a class="text-white" href="mailto: info@saaviYoga.com"><i class="pr-2 text-theme-primary fa fa-envelope"></i> info@saaviYoga.com</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-3">
@@ -89,6 +93,33 @@
 <!-- <script src="../assets/js/slick.js"></script> --> 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/intlTelInput.js"></script>
+<script src="../assets/js/intlTelInput-jquery.js"></script>
+  <script>
+    $(".phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      separateDialCode: true,
+      utilsScript: "../assets/js/utils.js",
+    });
+  </script>
 
 </body>
 

@@ -547,7 +547,7 @@ include('../layout/loggedin-header.php');
                         </div>
                     </div>
                     <div class="sendbtn">
-                        <button class="btn-grey-color">Send</button>
+                        <button class="reviewBtn bg-theme-primary">Send</button>
                     </div>
                 </div>
             </div>

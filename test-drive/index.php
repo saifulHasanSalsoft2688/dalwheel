@@ -13,7 +13,7 @@ include('../layout/loggedin-header.php');
             <div class="col-md-6">
                 <div class="form-area shadow p-md-4 p-3 rounded-0">
                     <div class="title-box mb-4">
-                        <h4 class="font-weight-bold">Your Detail</h4>
+                        <h4 class="font-weight-bold">Your Details</h4>
                     </div>
                     <div class="form-body">
                         <form action="#" method="POST">
@@ -37,9 +37,9 @@ include('../layout/loggedin-header.php');
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="subject">
-                                            Contact Number <span class="required">*</span>
+                                            Phone Number <span class="required">*</span>
                                         </label>
-                                        <input type="number" placeholder="Contact Number" class="form-control shadow border-0" id="subject">
+                                        <input type="number" placeholder="Enter Phone number" class="form-control shadow border-0 phone" id="subject">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -71,7 +71,8 @@ include('../layout/loggedin-header.php');
                                         <label for="discription">
                                             Details
                                         </label>
-                                        <textarea name="details" id="discription" class="form-control shadow border-0" placeholder="Enter Details" value="" rows="5">
+                                        <!-- test area value null from main.js -->
+                                        <textarea name="details" id="discription" class="form-control shadow border-0" placeholder="Enter Details" rows="5">
                                         </textarea>
                                     </div>
                                 </div>

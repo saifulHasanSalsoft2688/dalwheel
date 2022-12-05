@@ -1158,6 +1158,23 @@ span.count {
     cursor: pointer;
 }
 
+.product-listing-box:hover .cart-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.product-whishlist-icon {
+    padding-top: 10px;
+}
+
+.cart-icon {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+
 .link-to a,
 .link-to button {
     background-color: var(--text-primary-theme);
@@ -1256,6 +1273,10 @@ button.quantity-right-plus:hover, button.quantity-left-minus:hover {
 
 .gap-30 {
     gap: 60px;
+}
+
+.text-grey {
+    color: var(--grey);
 }
 
 .text-green {
@@ -1641,6 +1662,15 @@ ul#pills-tab {
     opacity: 0.4;
 }
 
+.btn:hover {
+    color: #b3b3b3 !important;
+    text-decoration: none;
+}
+
+.slide-content a {
+    border-bottom: 1px solid #fff;
+}
+
 
 
 .link-box {
@@ -1651,6 +1681,11 @@ ul#pills-tab {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.product-listing-header button {
+    position: relative;
+    z-index: 9999;
 }
 
 
@@ -2659,7 +2694,7 @@ form a {
     height: 2px;
     border: 1px dashed #000;
     width: 100%;
-    top: 50%;
+    top: 35%;
 }
 
 .step-active > div {
@@ -2683,10 +2718,86 @@ form a {
     width: 7rem !important;
 }
 
+.footer-content ul {
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
 
 body {
     font-size: .9rem !important;
 }
+
+.slick-vertical .slick-slide {
+    border: none !important;
+}
+
+.fa, .far, .fas {
+    font-family: 'FontAwesome';
+}
+
+.form-group .iti {
+    display: block;
+}
+
+.entries input[type=number]::-webkit-inner-spin-button, 
+.entries input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: inner-spin-button !important; 
+}
+
+#whishlist .product-listing-image img {
+    height: 225px;
+}
+
+.sold-out {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #ffffffb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: .5s;
+    height: 70%;
+}
+
+.product-listing-box:hover .sold-out {
+    display: flex;
+    transition: .5s;
+}
+
+.profile-box a {
+    text-decoration: underline;
+}
+
+.reviewBtn {
+    color: var(--white);
+    padding: 10px 50px;
+    font-size: 16px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.bg-grey {
+    background-color: #D4D4D4;
+    color: #000 !important;
+}
+
+.comparedBtn a:hover {
+    background-color: transparent !important;
+    border-color: #343a40;
+    color: #343a40;
+}
+
+/* .comparedBtn {
+    display: none;
+} */
+
 
 @media(max-width: 799px) {
     .mainBanner {

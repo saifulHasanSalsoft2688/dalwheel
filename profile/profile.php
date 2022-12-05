@@ -17,7 +17,7 @@ include('../layout/loggedin-header.php');
                                     <div class="profile-image m-0">
                                         <img src="../assets/images/user-icon.png" alt="Profile Image" class="mw-100">
                                     </div>
-                                    <button class="btn border-0 bg-transparent text-theme-primary font-weight-bold" data-toggle="modal" data-target="#changePassword">Change Password</button>
+                                    <a class="btn bg-transparent text-theme-primary font-weight-bold" data-toggle="modal" data-target="#changePassword">Change Password</a>
                                 </div>
                             </div>
                             <div class="col-md-6">

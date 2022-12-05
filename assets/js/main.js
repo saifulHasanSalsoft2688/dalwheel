@@ -1,70 +1,87 @@
 AOS.init();
 
-jQuery('#logout').click(function(){
+jQuery('#logout').click(function () {
   localStorage.setItem("session", 'false');
   window.location = '../auth-pages/login.php'
 });
 
 
-jQuery('#sign-in').click(function(){
+jQuery('#sign-in').click(function () {
   localStorage.setItem("session", 'true');
 });
 
 var sessions = localStorage.getItem("session");
-if(sessions == 'true') {
+if (sessions == 'true') {
   jQuery('.guest-menu-bar').hide();
   jQuery('.login-menu-bar').show();
 }
 
+jQuery('textarea').val('');
 
-jQuery('.submitButn button').click(function(index){
+jQuery('.submitButn button').click(function (index) {
   var classCheck = jQuery('.show').next().hasClass('card-item');
   var activeBox = jQuery('.step-active').next().hasClass('step-box-container');
-  if(classCheck == true) {
-          jQuery('.step-active').next('.step-box-container').addClass('step-active');
-          jQuery('.show').next('.card-item').addClass('show');
-          jQuery('.show').prev('.card-item').removeClass('show');
+  if (classCheck == true) {
+    jQuery('.step-active').next('.step-box-container').addClass('step-active');
+    jQuery('.show').next('.card-item').addClass('show');
+    jQuery('.show').prev('.card-item').removeClass('show');
+    jQuery('.step-active p').addClass('text-dark');
   } else {
-      jQuery(this).text('Place Order');
-      jQuery(this).attr('data-toggle', 'modal');
-      jQuery(this).attr('data-target', '#order');
+    jQuery(this).text('Place Order');
+    jQuery(this).attr('data-toggle', 'modal');
+    jQuery(this).attr('data-target', '#order');
   }
-  
-  });
+
+});
+
+
+jQuery('.compareBtn').click(function(){        
+  var compared = jQuery(this).parents('.car-listing-page').find('.bg-grey').length;
+  if(compared != 2) {
+      jQuery(this).text(jQuery(this).text() == 'Compare' ? 'Added' : 'Compare');
+      jQuery(this).toggleClass('bg-grey');
+      
+  } else {
+      jQuery(this).removeClass('bg-grey')
+      jQuery(this).text('Compare');
+      return false;
+  }
+   
+});
 
 
 // order status 
 
-jQuery('table a').click(function(){
-    var status = jQuery(this).parents('tr').find('.status').text();
-    localStorage.setItem('status', status);
+jQuery('table a').click(function () {
+  var status = jQuery(this).parents('tr').find('.status').text();
+  localStorage.setItem('status', status);
 });
 
 
 var getStatus = localStorage.getItem('status');
-if(getStatus == "In Progress") {
-    jQuery('.order-status').text(getStatus);
-    jQuery('.order-status').addClass('text-inProgress');
-    jQuery('.order-status').removeClass('text-deliver');
-    jQuery('.order-status').removeClass('text-pending');
+if (getStatus == "In Progress") {
+  jQuery('.order-status').text(getStatus);
+  jQuery('.order-status').addClass('text-inProgress');
+  jQuery('.order-status').removeClass('text-deliver');
+  jQuery('.order-status').removeClass('text-pending');
 }
 
 
-if(getStatus == "Pending") {
+if (getStatus == "Pending") {
   jQuery('.order-status').text(getStatus);
   jQuery('.order-status').addClass('text-pending');
   jQuery('.order-status').removeClass('text-inProgress');
   jQuery('.order-status').removeClass('text-deliver');
 }
 
-if(getStatus == "Delivered" || getStatus == "Approved") {
+if (getStatus == "Delivered" || getStatus == "Approved") {
   jQuery('.order-status').text(getStatus);
   jQuery('.order-status').addClass('text-deliver');
   jQuery('.order-status').removeClass('text-inProgress');
   jQuery('.order-status').removeClass('text-pending');
 }
 
-if(getStatus == "Rejected") {
+if (getStatus == "Rejected") {
   jQuery('.reasonRejected').show();
   jQuery('.order-status').text(getStatus);
   jQuery('.order-status').addClass('text-requested');
@@ -104,6 +121,22 @@ jQuery(window).scroll(function (event) {
 
 });
 
+
+// demo details page js 
+
+jQuery('.product-listing-box .link-box').click(function () {
+  var setDtailImage = jQuery(this).parent('.product-listing-box').find('img').attr('src');
+  localStorage.setItem('autoImage', setDtailImage);
+});
+
+var getImage = localStorage.getItem('autoImage');
+jQuery('.slider-box img').attr('src', getImage);
+
+
+// end 
+
+
+
 // adopt feature slider 
 
 jQuery('.slider-for').slick({
@@ -132,7 +165,12 @@ jQuery(".regular").slick({
   dots: false,
   infinite: true,
   slidesToShow: 3,
+  slidesToScroll: 1,
   autoplay: true,
+  speed: 1500,
+  autoplaySpeed: 2000,
+  pauseOnHover: false,
+  pauseOnFocus: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -423,5 +461,7 @@ $(".product-thumbnail").slick({
     },
   ],
 });
-// Add more input types  
+// Add more input types
+
+
 

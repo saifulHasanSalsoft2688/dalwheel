@@ -17,19 +17,22 @@ include('../layout/loggedin-header.php');
                     <div class="steps-icons my-4">
                         <div class="d-flex justify-content-between">
                             <div class="flex-grow-1 step-box-container step-active">
-                                <div class="step-box shadow">
+                                <div class="step-box shadow mb-3">
                                     <i class="fa fa-address-card" aria-hidden="true"></i>
                                 </div>
+                                <p class="text-dark labelText pl-4">Address</p>
                             </div>
                             <div class="flex-grow-1 step-box-container">
-                                <div class="step-box shadow">
+                                <div class="step-box shadow mb-3">
                                     <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 </div>
+                                <p class="text-grey labelText pl-4">Payment</p>
                             </div>
                             <div class="flex-grow-1 step-box-container">
-                                <div class="step-box shadow">
+                                <div class="step-box shadow mb-3">
                                     <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                 </div>
+                                <p class="text-grey labelText pl-4">Confirm</p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +64,7 @@ include('../layout/loggedin-header.php');
                                             <label for="phone">
                                                 Phone Number <span class="required">*</span>
                                             </label>
-                                            <input type="number" placeholder="Enter Phone Number" class="form-control shadow border-0" id="phone">
+                                            <input type="number" placeholder="Enter Phone Number" class="form-control shadow border-0 phone" id="phone">
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -85,9 +88,9 @@ include('../layout/loggedin-header.php');
                                     <div class="col-md-6 mb-3">
                                         <div class="form-group">
                                             <label for="address">
-                                                Address Line 2
+                                                Address
                                             </label>
-                                            <input type="text" placeholder="Address Line 2" class="form-control shadow border-0" id="address">
+                                            <input type="text" placeholder="Address" class="form-control shadow border-0" id="address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -139,9 +142,9 @@ include('../layout/loggedin-header.php');
                                     <div class="col-md-6 mb-3">
                                         <div class="form-group">
                                             <label for="address">
-                                                Address Line 2
+                                                Address
                                             </label>
-                                            <input type="text" placeholder="Address Line 2" class="form-control shadow border-0" id="address">
+                                            <input type="text" placeholder="Address" class="form-control shadow border-0" id="address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -188,9 +191,9 @@ include('../layout/loggedin-header.php');
                                     <div class="col-md-6 mb-3">
                                         <div class="form-group">
                                             <label for="name">
-                                                Name <span class="required">*</span>
+                                                Card Holder Name <span class="required">*</span>
                                             </label>
-                                            <input type="text" placeholder="Enter Name" class="form-control shadow border-0" id="name">
+                                            <input type="text" placeholder="Enter Card Holder Name" class="form-control shadow border-0" id="name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">

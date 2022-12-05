@@ -12,12 +12,12 @@ include('../layout/loggedin-header.php');
                         <p>Please Let Us Know How We Can Improve Your Experience</p>
                     </div>
                     <div class="form-body pt-4">
-                        <form action="#" method="POST">
+                        <form action="./mechanic-listing.php" method="POST">
                             <div class="row mb-4">
                                 <div class="col-md-6 mb-4">
                                     <div class="form-group">
                                         <label for="petCategory">
-                                            City
+                                            City <span class="required">*</span>
                                         </label>
                                         <select name="city" id="city" class="form-control shadow border-0">
                                             <option value="">City</option>

@@ -6,7 +6,7 @@ include('../layout/loggedin-header.php');
         <div class="row">
             <div class="col-md-12">
                 <div class="listing-title mb-3">
-                    <h5 class="">Home <i class="fa fa-chevron-right"></i> Used Cars <i class="fa fa-chevron-right"></i> <span class="text-danger">Used Cars</span> </h5>
+                    <h5 class="">Home <i class="fa fa-chevron-right"></i> Used Cars <i class="fa fa-chevron-right"></i> <span class="text-danger">Compare</span> </h5>
                     <h3 class="font-weight-bold">Compare</h3>
                 </div>
             </div>
@@ -54,7 +54,7 @@ include('../layout/loggedin-header.php');
                     <!--  -->
                     <div class="row my-3">
                         <div class="col-12  mb-3">
-                            <h6 class="secTitle fw600 mb-0 my-2">Descriptions</h6>
+                            <h6 class="secTitle fw600 mb-0 my-2">Description</h6>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="descBox my-3">
@@ -131,7 +131,7 @@ include('../layout/loggedin-header.php');
                         <div class="col-lg-4 col-md-6">
                             <div class="descBox my-3">
                                 <img src="../assets/images/key.png" alt="key">
-                                <p class="mb-0">Keyless Entery</p>
+                                <p class="mb-0">Keyless Entry</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -197,7 +197,7 @@ include('../layout/loggedin-header.php');
                     <!--  -->
                     <div class="row my-3">
                         <div class="col-12  mb-3">
-                            <h6 class="secTitle fw600 mb-0 my-2">Descriptions</h6>
+                            <h6 class="secTitle fw600 mb-0 my-2">Description</h6>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="descBox my-3">
@@ -274,7 +274,7 @@ include('../layout/loggedin-header.php');
                         <div class="col-lg-4 col-md-6">
                             <div class="descBox my-3">
                                 <img src="../assets/images/key.png" alt="key">
-                                <p class="mb-0">Keyless Entery</p>
+                                <p class="mb-0">Keyless Entry</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">

@@ -28,7 +28,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -55,6 +55,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -62,7 +65,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -89,6 +92,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -96,7 +102,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,6 +129,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -130,7 +139,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -157,6 +166,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -164,7 +176,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -191,6 +203,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -198,7 +213,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,6 +240,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -232,7 +250,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,6 +277,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
@@ -266,7 +287,7 @@ include('../layout/loggedin-header.php');
                                             <div class="product-listing-header px-2">
                                                 <div class="d-flex align-items-end flex-column">
                                                     <div class="product-whishlist-icon">
-                                                        <button class="btn text-theme-primary"><i class="fa fa-heart-o"></i></button>
+                                                        <button class="btn text-theme-primary"><i class="fa fa-heart"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -292,6 +313,9 @@ include('../layout/loggedin-header.php');
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
+                                            </div>
+                                            <div class="sold-out">
+                                                <h4 class="font-weight-bold">Sold Out</h4>
                                             </div>
                                         </div>
                                     </div>

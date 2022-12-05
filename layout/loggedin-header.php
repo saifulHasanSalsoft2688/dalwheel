@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../assets/css/slick.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/slickTheme.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/font/qanelas/stylesheet.css" type="text/css">
-    <title>Dal Pet Adopt</title>
+    <title>Dalwheel</title>
 </head>
 
 <body>

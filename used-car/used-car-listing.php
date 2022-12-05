@@ -445,7 +445,7 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
                             </div>
@@ -472,7 +472,7 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +499,7 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +526,7 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
                             </div>
@@ -553,7 +553,7 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
                             </div>
@@ -580,9 +580,14 @@ include('../layout/loggedin-header.php');
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <button class="notBtn contactBtn"><i class="fa fa-phone"></i></button>
-                                        <a href="./comparison.php" class="nav-link secondary-theme-button shadow">Compare</a>
+                                        <button class="nav-link secondary-theme-button shadow compareBtn">Compare</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <div class="comparedBtn text-center">
+                                <a href="./comparison.php" class="btn-theme-solid bg-dark">Compared</a>
                             </div>
                         </div>
                     </div>

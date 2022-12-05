@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/slick.css" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/font/qanelas/stylesheet.css" type="text/css">
     <title>Dalwheel</title>
 </head>
