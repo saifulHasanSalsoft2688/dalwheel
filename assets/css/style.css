@@ -3007,4 +3007,8 @@ header:not(.default) .navbar-brand img {
     .car-name h3 span {
         display: none;
     }
+
+    header:not(.default) ul {
+        align-items: center;
+    }
 }
