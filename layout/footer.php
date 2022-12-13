@@ -82,7 +82,7 @@
     </div>
     <!-- copy right  -->
     <div class="copyRight pt-3 text-center">
-        <p class="mb-0 text-white ">2022 © All rights reserved Dalwheel.</p>
+        <p class="mb-0 text-white ">2022 © All rights reserved Dalwheels.</p>
     </div>
 </footer>
 <?php include('../layout/popup.php'); ?>

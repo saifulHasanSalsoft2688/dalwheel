@@ -24,8 +24,8 @@ include('../layout/loggedin-header.php');
                 <div class="row">
                     <div class="col-md-6">
                         <div class="title-box">
-                            <p class="text-theme-primary aos-init aos-animate" data-aos="fade-down" data-aos-duration="1200">Dale Wheel</p>
-                            <h3 class="font-weight-bold f-40 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Sell Your Car On <span class="d-md-block"> Dale Wheels</span></h3>
+                            <p class="text-theme-primary aos-init aos-animate" data-aos="fade-down" data-aos-duration="1200">DalWheels</p>
+                            <h3 class="font-weight-bold f-40 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Sell Your Car On <span class="d-md-block"> DalWheels</span></h3>
                         </div>
                         <div class="content-box">
                             <p>
@@ -74,7 +74,7 @@ include('../layout/loggedin-header.php');
         <div class="row py-5">
             <div class="col-md-6">
                 <div class="title-box">
-                    <p class="text-theme-primary aos-init aos-animate" data-aos="fade-down" data-aos-duration="1200"> Dale Wheel</p>
+                    <p class="text-theme-primary aos-init aos-animate" data-aos="fade-down" data-aos-duration="1200"> DalWheels</p>
                     <h3 class="font-weight-bold aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Perfect Way To Buy And Sell
                         Car On Our Platform</h3>
                 </div>

@@ -8,7 +8,7 @@ include('../layout/loggedin-header.php');
                 <div class="ad-post-area">
                     <div class="listing-title mb-3">
                         <h5 class="">Home <i class="fa fa-chevron-right"></i> <span class="text-danger">Car Inspection</span> </h5>
-                        <h3 class="font-weight-bold">Schedule Dale Wheels Car Inspection</h3>
+                        <h3 class="font-weight-bold">Schedule DalWheels Car Inspection</h3>
                         <p>Please Let Us Know How We Can Improve Your Experience</p>
                     </div>
                     <div class="form-body pt-4">

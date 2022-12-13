@@ -228,7 +228,7 @@ jQuery(".banners").slick({
   infinite: true,
   slidesToShow: 1,
   vertical: true,
-  autoplay: false,
+  autoplay: true,
   speed: 2000,
   autoplaySpeed: 4000,
   cssEase: 'ease-in-out',

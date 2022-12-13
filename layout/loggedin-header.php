@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/font/qanelas/stylesheet.css" type="text/css">
-    <title>Dalwheel</title>
+    <title>Dalwheels</title>
 </head>
 
 <body>

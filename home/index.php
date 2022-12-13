@@ -113,8 +113,8 @@ include('../layout/header.php');
                 <div class="row">
                     <div class="col-md-6">
                         <div class="title-box">
-                            <p class="text-theme-primary" data-aos="fade-down" data-aos-duration="1200">Post your Ad on Dale Wheel</p>
-                            <h1 class="f-40" data-aos="fade-up" data-aos-duration="1000">Sell Your Car On <span class="d-md-block"> Dale Wheels</span></h1>
+                            <p class="text-theme-primary" data-aos="fade-down" data-aos-duration="1200">Post your Ad on DalWheels</p>
+                            <h1 class="f-40" data-aos="fade-up" data-aos-duration="1000">Sell Your Car On <span class="d-md-block"> DalWheels</span></h1>
                         </div>
                         <div class="content-box">
                             <p>
@@ -395,9 +395,9 @@ include('../layout/header.php');
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="title-box text-center">
-                    <p class="text-theme-primary mb-0 text-uppercase" data-aos="fade-down" data-aos-duration="1200">Dale Wheel Products</p>
+                    <p class="text-theme-primary mb-0 text-uppercase" data-aos="fade-down" data-aos-duration="1200">DalWheels Products</p>
                     <h1 class="f-40" data-aos="fade-up" data-aos-duration="1000">Explore Products By
-                        <span class="d-md-block">Dale Wheels</span>
+                        <span class="d-md-block">DalWheels</span>
                     </h1>
                 </div>
             </div>
