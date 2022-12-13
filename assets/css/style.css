@@ -2584,6 +2584,10 @@ form a {
     cursor: pointer;
 }
 
+div#carFilter button[aria-expanded="true"], div#carFilter button:hover {
+    color: var(--text-primary-theme) !important;
+}
+
 .item.item-sliderNav {
     margin: 0px 10px;
 }
@@ -2794,6 +2798,13 @@ body {
     color: #343a40;
 }
 
+
+header:not(.default) .navbar-brand img {
+    content: url(../images/logo-black.png);
+    width: 80px !important;
+}
+
+
 /* .comparedBtn {
     display: none;
 } */
@@ -2979,5 +2990,21 @@ body {
 
     .list-view .listingCard {
         display: block;
+    }
+}
+
+@media(min-width: 1024px) {
+    header:not(.default) .navbar-brand {
+        position: absolute;
+    }
+
+    .car-name h3, .car-name h6 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .car-name h3 span {
+        display: none;
     }
 }
