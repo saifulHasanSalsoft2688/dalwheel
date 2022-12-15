@@ -21,8 +21,8 @@
 <body>
     <header class="position-fixed w-100 default guest-header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="../home/">
+            <nav class="navbar navbar-expand-lg navbar-light py-md-0">
+                <a class="navbar-brand py-md-0" href="../home/">
                     <img src="../assets/images/logo.png" alt="Logo" class="mw-100" draggable="false">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

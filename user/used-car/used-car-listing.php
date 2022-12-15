@@ -155,6 +155,67 @@ include('../layout/loggedin-header.php');
                             </div>
                         </div>
 
+                        <!-- Category  -->
+
+                        <div class="card">
+                            <div class="card-header" id="searchMake">
+                                <h2>
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#cat" aria-expanded="false" aria-controls="make">
+                                        Category
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="cat" class="collapse" aria-labelledby="searchcat" data-parent="#carFilter">
+                                <div class="card-body">
+                                    <div class="position-relative mb-2">
+                                        <input type="text" placeholder="Search Here...." class="form-control rounded">
+                                        <button type="button" class="search-btn text-secondary"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <div class="ctiy-option my-2">
+                                        <div class="form-group">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="SUV" id="SUV">
+                                                <label class="form-check-label" for="SUV">
+                                                    SUV
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Sedan" id="Sedan">
+                                                <label class="form-check-label" for="Sedan">
+                                                    Sedan
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Hatchback" id="Hatchback">
+                                                <label class="form-check-label" for="Hatchback">
+                                                    Hatchback
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Crossover" id="Crossover">
+                                                <label class="form-check-label" for="Crossover">
+                                                    Crossover
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Coupe" id="Coupe">
+                                                <label class="form-check-label" for="Coupe">
+                                                    Coupe
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="Minivan" id="Minivan">
+                                                <label class="form-check-label" for="Minivan">
+                                                    Minivan
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Price Range  -->
                         <div class="card">
                             <div class="card-header" id="priceFilter">

@@ -2801,7 +2801,7 @@ body {
 
 header:not(.default) .navbar-brand img {
     content: url(../images/logo-black.png);
-    width: 80px !important;
+    width: 90px !important;
 }
 
 
@@ -2994,9 +2994,9 @@ header:not(.default) .navbar-brand img {
 }
 
 @media(min-width: 1024px) {
-    header:not(.default) .navbar-brand {
+    /* header:not(.default) .navbar-brand {
         position: absolute;
-    }
+    } */
 
     .car-name h3, .car-name h6 {
         display: -webkit-box;
